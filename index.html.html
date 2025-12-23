@@ -1,0 +1,1762 @@
+<html lang="zh-Hant"><head><script>(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjJkYmE3M2IxMjU1ZjVkYjU2ZDZhODNhYmE5YTA2Zjg5YzAwMDI1ZDciLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNzIxOTYwNDMxNzc2MDg4NTI3MCIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzMzNzRjNTNkNzZkZTc2Njlf44CK5pif6Zqb5re356iu44CL5YWo5pu457WC5qW15a6M5pW05b2p6Jm554mILmh0bWwtODE2In0sImV4cCI6MTc2NjQ5NDg5NSwiaWF0IjoxNzY2NDkxMjk1LCJhbGciOiJSUzI1NiJ9.ioR8cs0YjAAL7yAFuxQz4HYwGie96EKa7TX4cPLIV1-JiGfkaw8VQggwBkzOVjtw9iAwuq3Ywjm6qJ4Z1DIUfpl8iFS8yxSoHPTyGk0GWZ3XA5t0H6C2lzPDpP8wW4nKZae1gtNNEx2WkzKCJgQ76GAjQBRlKbbFdZE5k1w2cTdieR__uIW2dLCgN6bHQgsDS5lyPR1yp-EZ57XQ83dOI5JPSX_z_nB0vfWQtAyJLjzVVYn9xILVNo9Q7m-Cxx4tSCGQBe60gMjRvV0_4e1nhmH2nKDHAvvHPd3svIVd_ue_WZh6i1UUZZeUfbMY_9QEwYlbP4ZW5D4UX-XyVW3b4Q","c_3374c53d76de7669_《星際混種》全書終極完整彩虹版.html-816")</script><script>'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){const d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);const c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{let a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){const b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{const c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){const c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{const c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){const c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);const e=yield c.blob();return new Promise((f,g)=>{const k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){let c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){const c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());let e;try{const f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){const b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");const c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;let c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){const c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{let g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){const g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){const b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{const e=d?(new URL(b,d||void 0)).toString():b;let f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){const [c,,e]=ia.exec(d)||[],f=c,g=e;if(!g)return"";if(g===b)return`src: ${f};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;const c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c;const e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){const d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){const d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){let d=a.cssText;const c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){let g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];const b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){const d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){const g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}const d=new Set;b(a);return d}function ua(a,b){return t(function*(){const d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){const d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){const c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b);var e=yield wa(a,b);e=yield B(e);const f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=
+16384));f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;const c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){const a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){let b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){const b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+</script><script>(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script>
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script>((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-2.5-flash-preview-09-2025","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-2.5-flash-image-preview","imageTransformModelName":"gemini-3-pro-image-preview-11-2025","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"]})</script><script>(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《星際混種：雙重靈魂的地球旅程》全書終極完整彩虹版</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&amp;family=Noto+Serif+TC:wght@400;600;700&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
+<!-- 引入下載庫 -->
+<script src="https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/turndown@7.1.1/dist/turndown.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/docx@7.8.2/build/index.js" crossorigin="anonymous"></script>
+<style>
+    /* 全局設定 */
+    :root {
+        --main-font: 'Noto Sans TC', sans-serif;
+        --heading-font: 'Noto Serif TC', serif;
+        --code-font: 'Share Tech Mono', monospace;
+        --text-color: #2d3436;
+    }
+
+    body {
+        margin: 0;
+        padding: 40px 20px;
+        background-color: #f0f2f5;
+        font-family: var(--main-font);
+        color: var(--text-color);
+    }
+
+    /* 書頁容器 */
+    .book-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    /* 章節通用樣式 */
+    section.chapter {
+        padding: 80px 70px;
+        page-break-after: always;
+        position: relative;
+        /* 預設變數，將由 inline style 覆蓋 */
+        --theme-color: #333;
+        --theme-bg: #fff;
+        
+        background-color: var(--theme-bg);
+        border-top: 15px solid var(--theme-color);
+    }
+
+    /* 封面專屬樣式 (星際升級版) */
+    .cover-page {
+        text-align: center; 
+        padding-top: 100px !important; 
+        min-height: 80vh;
+        /* 修改：加入星雲光暈的複合背景 */
+        background-color: #000;
+        background-image: 
+            radial-gradient(circle at 50% 30%, rgba(44, 62, 80, 0.8) 0%, rgba(0, 0, 0, 1) 100%), /* 原有深藍底 */
+            radial-gradient(circle at 20% 80%, rgba(120, 50, 180, 0.2) 0%, transparent 50%), /* 紫色星雲光暈 */
+            radial-gradient(circle at 80% 20%, rgba(50, 100, 180, 0.2) 0%, transparent 50%); /* 藍色星雲光暈 */
+        color: #fff !important;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* 封面星光裝飾 - 第一層 (較大的星星) */
+    .cover-page::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-image: 
+            radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 3px),
+            radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
+            radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px);
+        background-size: 550px 550px, 350px 350px, 250px 250px;
+        background-position: 0 0, 40px 60px, 130px 270px;
+        opacity: 0.9; /* 提高亮度 */
+        z-index: 1;
+    }
+
+    /* 新增：封面星光裝飾 - 第二層 (細小密集的星塵，增加深度) */
+    .cover-page::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-image: 
+            radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 1px),
+            radial-gradient(rgba(255,255,255,.8), rgba(255,255,255,.05) 1px, transparent 2px);
+        background-size: 100px 100px, 70px 70px;
+        background-position: 20px 20px, -10px 50px;
+        opacity: 0.6;
+        z-index: 2;
+    }
+
+    .cover-content {
+        position: relative;
+        z-index: 10; /* 確保文字在星星上方 */
+        border: 2px solid rgba(255,255,255,0.3);
+        padding: 60px 40px;
+        margin: 0 40px;
+        background: rgba(0,0,0,0.3);
+        backdrop-filter: blur(5px);
+        border-radius: 8px;
+    }
+
+    /* 標題樣式 */
+    h1.book-title {
+        font-family: var(--heading-font);
+        font-size: 3.8em;
+        text-align: center;
+        margin: 20px 0;
+        line-height: 1.2;
+        color: var(--theme-color);
+        text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    
+    /* 封面標題特殊色 */
+    .cover-page h1.book-title {
+        color: #fff;
+        text-shadow: 0 0 20px rgba(255,255,255,0.8), 0 0 40px rgba(255,255,255,0.3); /* 增強標題發光效果 */
+    }
+    
+    .english-title {
+        font-size: 0.4em; 
+        font-weight: 300; 
+        display: block; 
+        margin-top: 20px; 
+        color: rgba(255,255,255,0.8);
+        font-family: var(--main-font);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        padding-top: 20px;
+    }
+
+    h2.chapter-title {
+        font-family: var(--heading-font);
+        font-size: 2.4em;
+        color: var(--theme-color);
+        margin-top: 0;
+        margin-bottom: 40px;
+        text-align: center;
+        border-bottom: 3px double var(--theme-color);
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        font-family: var(--heading-font);
+        font-size: 1.6em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: var(--theme-color);
+        border-left: 6px solid var(--theme-color);
+        padding-left: 15px;
+        background: linear-gradient(90deg, rgba(255,255,255,0.5), transparent);
+    }
+
+    h4 {
+        font-family: var(--main-font);
+        font-size: 1.2em;
+        font-weight: bold;
+        color: var(--theme-color);
+        margin-top: 25px;
+        margin-bottom: 15px;
+        opacity: 0.9;
+    }
+
+    p {
+        line-height: 2.0;
+        font-size: 1.1em;
+        margin-bottom: 25px;
+        text-align: justify;
+        text-justify: inter-ideograph;
+        color: #2d3436;
+    }
+
+    /* 重點框與卡片 */
+    .highlight-box, .mission-card, .symptom-card, .tech-box, .shadow-box, .poem-box, .trait-list, .intro-box {
+        border: 2px solid var(--theme-color);
+        background: rgba(255, 255, 255, 0.7);
+        padding: 30px;
+        border-radius: 8px;
+        margin: 35px 0;
+        position: relative;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    
+    .highlight-box strong, .mission-card strong, .symptom-card strong {
+        color: var(--theme-color);
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: 10px;
+        font-family: var(--heading-font);
+    }
+
+    /* 引用 */
+    blockquote {
+        font-family: var(--heading-font);
+        font-style: italic;
+        font-size: 1.15em;
+        margin: 40px 0;
+        padding: 20px 30px;
+        border-left: 5px solid var(--theme-color);
+        background: rgba(255, 255, 255, 0.5);
+        color: #555;
+    }
+
+    /* 列表樣式 */
+    ul, ol {
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+    
+    li {
+        margin-bottom: 12px;
+        position: relative;
+        padding-left: 5px;
+        line-height: 1.8;
+    }
+    
+    /* 特殊列表標記 */
+    ul li::marker {
+        color: var(--theme-color);
+        font-size: 1.2em;
+    }
+
+    /* 目錄連結 */
+    .toc a {
+        text-decoration: none;
+        color: #555;
+        font-family: var(--heading-font);
+        font-size: 1.1em;
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px dashed #ddd;
+        transition: all 0.3s;
+    }
+
+    .toc a:hover {
+        color: var(--theme-color);
+        padding-left: 10px;
+        font-weight: bold;
+    }
+
+    /* 下載面板 */
+    .download-panel {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        border-radius: 8px;
+        z-index: 1000;
+        border: 1px solid #ccc;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        margin: 5px 0;
+        border: 1px solid #2c3e50;
+        background: #fff;
+        color: #2c3e50;
+        text-decoration: none;
+        font-size: 0.9em;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    .btn:hover {
+        background: #2c3e50;
+        color: #fff;
+    }
+
+    .signature-block {
+        margin-top: 60px;
+        text-align: right;
+        padding-right: 20px;
+        font-family: var(--heading-font);
+    }
+    
+    .signature-name {
+        font-family: 'Brush Script MT', cursive;
+        font-size: 2.8em;
+        margin-top: 15px;
+    }
+
+    /* PDF 修正 */
+    .pdf-print-mode {
+        width: 100% !important;
+        max-width: none !important;
+        box-shadow: none !important;
+    }
+    
+    /* 下載進度提示 */
+    .loading-overlay {
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(255,255,255,0.9);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+        flex-direction: column;
+    }
+    .loading-text {
+        font-family: var(--heading-font);
+        font-size: 1.5em;
+        color: #2c3e50;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<!-- 下載面板 -->
+<div class="download-panel" data-html2canvas-ignore="true">
+    <div style="font-weight: bold; margin-bottom: 10px; text-align: center;">📥 下載全書</div>
+    <button class="btn" onclick="downloadPDF()">PDF (A4)</button>
+    <button class="btn" onclick="downloadMarkdown()">Markdown</button>
+    <button class="btn" onclick="downloadDocX()">Word (.docx)</button>
+    <button class="btn" onclick="downloadHTML()">HTML</button>
+</div>
+
+<!-- 載入中遮罩 -->
+<div id="loadingOverlay" class="loading-overlay">
+    <div style="width: 50px; height: 50px; border: 5px solid #ccc; border-top-color: #2c3e50; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+    <div class="loading-text">正在生成 PDF，請稍候...</div>
+    <style>@keyframes spin { 100% { transform: rotate(360deg); } }</style>
+</div>
+
+<div class="book-container" id="book-content">
+
+    <!-- 封面 (星際升級版) -->
+    <section class="chapter cover-page" style="--theme-color: #ffffff; --theme-bg: #192a56;">
+        <div class="cover-content">
+            <h1 class="book-title">星際混種<br>雙重靈魂的地球旅程
+            <span class="english-title">Hybrid Starseeds<br>The Earth Journey of Dual Souls</span></h1>
+            
+            <div style="margin-top: 100px; font-family: 'Noto Serif TC', serif; font-size: 1.4em; color: rgba(255,255,255,0.9); font-style: italic;">
+                一部關於覺醒、整合與歸鄉的靈魂手冊
+            </div>
+            
+            <div style="margin-top: 150px; color: #d4af37; font-family: var(--heading-font); text-align: center;">
+                <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 2px; margin-bottom: 5px;">星際種子能量療癒</div>
+                <div style="font-size: 1em; letter-spacing: 1px; font-family: var(--main-font); margin-bottom: 10px; opacity: 0.9;">Starseed Energy Healing</div>
+                <div style="font-size: 1.8em; font-family: 'Brush Script MT', cursive; margin-top: 15px;">Ruby</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 序言與大綱 (午夜藍) -->
+    <section class="chapter" style="--theme-color: #273c75; --theme-bg: #f4f6f9;">
+        <h2 style="text-align: center; color: var(--theme-color); font-family: var(--heading-font);">書籍簡介</h2>
+        <div class="intro-box">
+            <p>在這個意識覺醒加速的時代，越來越多的人開始感受到一種深層的內在召喚，一種源自於星辰的鄉愁。本書《星際混種：雙重靈魂的地球旅程》旨在探索「混種星際種子」（Hybrid Starseed）這一獨特且神祕的靈魂群體。不同於純粹的地球靈魂或典型的星際種子，混種星際種子攜帶著更為複雜的能量藍圖，他們是連結不同維度、不同文明的橋樑。</p>
+            
+            <p>所謂「混種」，並非僅指生物學上的基因混合，更多是指靈魂層面與能量場上的融合。這些個體通常在靈魂契約中同意將地球人類的DNA與特定外星文明（如天狼星、昴宿星、大角星等）的頻率相結合。他們的存在本身就是一個巨大的實驗與恩典，旨在協助地球從三維矩陣過渡到五維的新地球頻率。然而，這種雙重屬性也為他們帶來了巨大的挑戰：他們常感到與世界格格不入，經歷強烈的孤獨感，並在適應地球稠密能量時面臨身心的劇烈摩擦。</p>
+
+            <p>本書將深入剖析混種星際種子的起源、特徵以及他們此生的核心任務。我們將不只停留在神祕學的理論探討，更會結合現代心理學關於「高敏感族群」（HSP）的觀察，以及量子物理學對意識場的解釋，試圖為這些靈魂提供一個紮實的理解框架。透過歷史文獻中對於「天人感應」與「異星接觸」的隱晦記載，我們將拼湊出星際種子在人類歷史長河中的軌跡。</p>
+
+            <p>透過本書，讀者將學會如何識別自己的星際起源，理解那些看似病理化的身心症狀（如莫名的耳鳴、電磁敏感、長期的疲勞感）實際上可能是能量升級的徵兆。更重要的是，本書將指引混種星際種子如何整合內在的二元對立，將「外星」的高頻智慧接地落實於「地球」的日常生活之中，完成他們來到此地的終極使命：成為愛的導體，協助人類集體意識的揚升。</p>
+
+            <p>這不是一本關於逃離地球的指南，而是一本關於如何在此地、此時，完全體現你神聖本質的落地手冊。</p>
+        </div>
+
+        <h2 style="text-align: center; color: var(--theme-color); font-family: var(--heading-font); margin-top: 50px;">章節大綱</h2>
+        <ul style="line-height: 1.8;">
+            <li><strong>第一章：星際起源與混種定義</strong> - 探討星際種子概念與混種的獨特能量結構。</li>
+            <li><strong>第二章：靈魂契約與投生藍圖</strong> - 解析投生前的計畫與為何選擇困難的劇本。</li>
+            <li><strong>第三章：雙重DNA的張力</strong> - 探討生物學與高維頻率在肉體層面的適應問題。</li>
+            <li><strong>第四章：覺醒的徵兆</strong> - 從童年的格格不入到成年的靈性危機與覺醒。</li>
+            <li><strong>第五章：星際家園的印記</strong> - 介紹天狼星、昴宿星、大角星等主要文明頻率特徵。</li>
+            <li><strong>第六章：身心症狀與能量護理</strong> - 揚升症狀的解析與實用護理技巧。</li>
+            <li><strong>第七章：人際關係與鏡像投射</strong> - 業力伴侶、原生家庭與雙生火焰的課題。</li>
+            <li><strong>第八章：任務與使命</strong> - 從被動適應轉為主動創造，定義四大星際任務。</li>
+            <li><strong>第九章：整合陰影</strong> - 面對地球二元對立，轉化內在陰影為智慧。</li>
+            <li><strong>第十章：科技、意識與新地球</strong> - 星際種子與未來科技、AI及去中心化社會的關係。</li>
+            <li><strong>第十一章：歸鄉即當下</strong> - 總結旅程，如何在地球建立星光座標，具身揚升。</li>
+        </ul>
+    </section>
+
+    <!-- 目錄 (深灰) -->
+    <section class="chapter toc" style="--theme-color: #2d3436; --theme-bg: #ffffff;">
+        <h2 class="chapter-title" style="border:none;">目錄</h2>
+        <ul>
+            <li><a href="#ch1" style="color: #273c75;">第一章：星際起源與混種定義 (午夜藍)</a></li>
+            <li><a href="#ch2" style="color: #8e44ad;">第二章：靈魂契約與投生藍圖 (皇室紫)</a></li>
+            <li><a href="#ch3" style="color: #218c74;">第三章：雙重DNA的張力 (翡翠綠)</a></li>
+            <li><a href="#ch4" style="color: #e67e22;">第四章：覺醒的徵兆 (晨曦橘)</a></li>
+            <li><a href="#ch5" style="color: #5758BB;">第五章：星際家園的印記 (銀河紫)</a></li>
+            <li><a href="#ch6" style="color: #6ab04c;">第六章：身心症狀與能量護理 (鼠尾草綠)</a></li>
+            <li><a href="#ch7" style="color: #eb4d4b;">第七章：人際關係與鏡像投射 (玫瑰紅)</a></li>
+            <li><a href="#ch8" style="color: #f0932b;">第八章：任務與使命 (烈焰金)</a></li>
+            <li><a href="#ch9" style="color: #2d3436;">第九章：整合陰影 (黑曜石)</a></li>
+            <li><a href="#ch10" style="color: #00cec9;">第十章：科技、意識與新地球 (電路青)</a></li>
+            <li><a href="#ch11" style="color: #b33939;">第十一章：歸鄉即當下 (大地棕)</a></li>
+            <li><a href="#conclusion" style="color: #95a5a6;">結語：新地球的黎明 (光譜白)</a></li>
+        </ul>
+    </section>
+
+    <!-- 第一章 (午夜藍) -->
+    <section id="ch1" class="chapter" style="--theme-color: #273c75; --theme-bg: #f5f6fa;">
+        <h2 class="chapter-title">第一章：星際起源與混種定義</h2>
+        <p>當你仰望夜空，注視著那些閃爍的恆星，你的心中是否湧現過一種難以言喻的鄉愁？這種感覺並非源於浪漫主義的詩意遐想，而是一種類似於迷路的孩子渴望回家的深層痛楚。對於許多人來說，地球不僅是一個家園，更像是一個充滿限制與困惑的異鄉。如果你曾深深質疑自己為何誕生於此，或是感覺自己與周遭的人類社會格格不入，那麼，這一章將為你揭開靈魂深處的謎團。</p>
+
+        <p>在我們深入探討「混種星際種子」（Hybrid Starseed）這個核心概念之前，我們必須先理解這個宇宙宏大敘事中的基本詞彙與靈性背景。這不僅僅是關於外星人或科幻小說的情節，而是關於意識演化、靈魂系譜學以及地球目前正在經歷的巨大轉變。</p>
+
+        <h3>星際種子（Starseed）：宇宙的流浪者</h3>
+        <p>「星際種子」一詞，最早在1970年代由布拉德·斯泰格（Brad Steiger）在其著作《水瓶座的神與人》（Gods of Aquarius）中普及化。然而，這個概念本身古老如人類歷史。從古埃及的祭司到美洲原住民的薩滿，許多古老文明都記載著「來自星星的人」或「天行者」降臨地球，帶來知識與光的傳說。</p>
+        <p>在當代的靈性語境中，星際種子指的是那些起源於地球之外的靈魂。這些靈魂在轉世進入地球的人類肉身之前，曾在其他的星球、星系、維度或平行宇宙中經歷過長久的演化旅程。與主要在地球輪迴系統中學習與成長的「地球靈魂」（Earth Souls）不同，星際種子是帶著特定的任務「志願」來到這裡的。</p>
+        
+        <h4>頻率的差異</h4>
+        <p>星際種子與地球靈魂最本質的區別在於「頻率特徵」。地球靈魂的能量場通常與蓋亞（地球母親）的歷史脈動緊密相連，他們熟悉地球的重力、情感模式以及因果法則，對於物質世界的運作感到自在。相反，星際種子的能量場往往攜帶著高頻、輕盈但有時顯得「漂浮」的特質。這種頻率源自於他們星際家園的環境，那裡可能沒有沈重的物質身體，溝通是透過心靈感應，且不存在地球上如此極端的二元對立（如善與惡、愛與恐懼的劇烈拉扯）。</p>
+        <p>因此，當一顆習慣於五維或更高維度的星際種子，壓縮進入三維地球的稠密肉身時，他們會經歷巨大的「密度衝擊」。這就像是一個深海潛水員突然被拉到高壓環境，或是反過來，一個習慣飛翔的生物被關進了沉重的鐵甲之中。</p>
+
+        <h3>混種（Hybrid）：超越生物學的靈性融合</h3>
+        <p>如果說所有的星際種子都是外來的靈魂穿著人類的「生物宇航服」，那麼「混種星際種子」又有何特殊之處？這個詞彙常引起誤解，許多人會聯想到好萊塢電影中那種半人半外星人的生物實驗，或是充滿恐懼的綁架敘事。雖然在某些極端的案例中，物理層面的基因實驗確實存在，但本書所探討的「混種」，更多是指向<strong>能量藍圖與靈魂結構</strong>的獨特性。</p>
+        <p>混種星際種子，是指那些在靈魂層面同意將<strong>人類的地球經驗</strong>與<strong>特定的外星文明頻率</strong>進行深度融合的個體。他們不僅僅是來「參觀」或「幫忙」的，他們是來「成為」橋樑的。</p>
+
+        <h4>1. 能量場的雙重編碼</h4>
+        <p>一般的星際種子可能在其能量場中主要攜帶著母星的印記，而人類的肉身對他們來說僅是一個載具，兩者之間可能存在著某種程度的分離感。然而，混種星際種子的能量結構是「交織」的。他們的靈魂契約中寫入了一種特殊的編碼，允許他們同時運作兩種（甚至多種）截然不同的頻率。</p>
+        <p>試想一下，如果地球頻率是調幅廣播（AM），而高維星際頻率是調頻廣播（FM），混種星際種子就像是一台被特殊改裝的收音機，能夠同時接收並整合這兩種訊號，創造出一種全新的「立體聲」。這使他們能夠在保持與高維智慧連結的同時，深入體驗並轉化地球人類的情感與創傷。</p>
+
+        <h4>2. 基因層面的微調</h4>
+        <p>雖然我們外表看起來與一般人類無異，但在DNA的微觀層面（特別是科學家所謂的「垃圾DNA」或非編碼DNA區域），混種星際種子往往攜帶著處於休眠狀態的星際基因。這些基因片段是光碼的接收器。當個體的意識提升或遭遇到特定的宇宙能量波（如太陽閃焰、星門開啟）時，這些基因會被激活，從而解鎖某些超感官能力（如透視、療癒手感、預知夢）或深層的宇宙智慧。</p>
+
+        <h3>為什麼現在出現混種？</h3>
+        <p>宇宙中沒有巧合。混種星際種子的大量出現，與地球目前的揚升進程（Ascension Process）密不可分。我們正處於一個26,000年週期的尾聲與新週期的開端，地球正試圖從第三維度的分離意識，過渡到第五維度的合一意識。</p>
+        <p>在這個過程中，地球原本的能量網格已經無法負荷新的光子能量。如果直接將高維能量灌入地球，可能會導致災難性的後果（類似電壓過載燒毀電路）。因此，需要「變壓器」：這就是混種星際種子的角色。</p>
+        
+        <div class="highlight-box">
+            <strong>混種星際種子是活生生的頻率錨定點。</strong>
+            <ul>
+                <li><strong>作為橋樑：</strong>他們連接了天與地。透過擁有一個人類的身體，他們將根扎入地球；透過擁有一個星際的靈魂，他們將天線伸向宇宙。</li>
+                <li><strong>作為轉化者：</strong>他們在自己的體內消化、處理人類集體潛意識中的恐懼、憤怒與悲傷，並將其轉化為光。這也是為什麼許多混種星際種子一生都在與情緒問題或身心失調搏鬥，他們處理的不僅是個人的業力，更是集體的重擔。</li>
+                <li><strong>作為原型（Prototype）：</strong>混種星際種子實際上是「新人類」的原型。未來的地球人類，將普遍擁有這種融合了物質與靈性、地球與星際的雙重特質。混種星際種子是先行者，他們正在用自己的生命實驗，測試如何在稠密的物質世界中維持神性意識。</li>
+            </ul>
+        </div>
+
+        <h3>分類與光譜</h3>
+        <p>值得注意的是，混種並非只有一種類型。就像光譜一樣，混種星際種子也存在著不同的光譜分布。有些人是「顯性混種」，他們從小就展現出強烈的異質性，甚至擁有無法解釋的記憶或接觸體驗；有些人則是「隱性混種」或稱為「潛伏者」，他們的外表與行為極度融入人類社會，直到某個特定的覺醒契機（Trigger Event）發生，他們內在的星際編碼才會被啟動。</p>
+        <p>此外，根據靈魂來源的不同，混種的能量特質也大相徑庭：</p>
+        <ul>
+            <li><strong>天狼星混種（Sirian Hybrids）：</strong>通常展現出強烈的戰士精神、守護者特質，以及對古老科技與幾何學的直覺。</li>
+            <li><strong>昴宿星混種（Pleiadian Hybrids）：</strong>攜帶著柔和的愛、治癒與美的頻率，通常投身於藝術、療癒或心理諮商領域。</li>
+            <li><strong>大角星混種（Arcturian Hybrids）：</strong>擁有強大的邏輯思維、幾何結構感與高科技靈性，是強大的精神導師與系統建構者。</li>
+        </ul>
+
+        <h3>結語：承認你的異質性</h3>
+        <p>閱讀至此，你或許會感到一種混雜著釋放與恐懼的情緒。釋放，是因為你終於為那種長久以來的「格格不入」找到了解釋；恐懼，是因為承認自己是「異類」似乎意味著更深的孤獨。</p>
+        <p>然而，親愛的靈魂，請明白：你的異質性正是你的禮物。你並非因為錯誤而來到地球，也非因為懲罰而被流放至此。你是被選中、並且志願參與這場宏大實驗的勇士。在接下來的章節中，我們將深入探討這個選擇背後的靈魂契約，以及你為了來到這裡，究竟做了多麼精密的準備。</p>
+    </section>
+
+    <!-- 第二章 (皇室紫) -->
+    <section id="ch2" class="chapter" style="--theme-color: #8e44ad; --theme-bg: #fbf6ff;">
+        <h2 class="chapter-title">第二章：靈魂契約與投生藍圖</h2>
+        <p>承接第一章所言，若你已經意識到自己可能攜帶著不同於地球本土靈魂的頻率，那麼緊接著浮現的最巨大疑問往往是：「為什麼？為什麼我會選擇來到這裡？」這是一個在靈魂暗夜中被無數次吶喊出的問題。尤其是當地球的沉重、混亂與暴力讓你感到窒息時，這一切似乎看起來像是一個可怕的錯誤，一場導航系統的失靈。</p>
+        <p>然而，從高維度的視角來看，沒有任何一次投生是意外。對於混種星際種子而言，你的到來更是一次精密策劃、經過層層審核的「特種任務」。本章將帶領你穿越時間的帷幕，回到你投生前的那個決策時刻，揭示那份神聖的靈魂契約與投生藍圖。</p>
+
+        <h3>投生前的議會：志願者的誓言</h3>
+        <p>在進入肉身之前，所有的靈魂都會經歷一段規劃期。但對於混種星際種子來說，這個過程更像是一場戰略簡報會議，而非普通的轉世輪迴安排。想像一個充滿光與幾何圖形的高維空間，這裡聚集了來自不同星系聯盟的代表，這通常被稱為「光之議會」或「業力委員會」。</p>
+        <p>在這個階段，地球被展示為一個關鍵的演化節點。議會解釋了蓋亞（地球意識）發出的求救訊號，以及人類集體意識正處於自我毀滅與揚升躍進的十字路口。這不是一場強制徵兵，而是一次「志願者招募」。</p>
+
+        <div class="highlight-box">
+            <strong>關鍵概念：業力債務 vs. 服務契約</strong><br>
+            大多數地球靈魂的轉世是基於「業力平衡」，他們回來是為了學習未完成的課題、償還情感債務或體驗因果。然而，混種星際種子的主要動力通常不是個人的業力債務（雖然他們可能承擔了集體業力），而是「服務契約」。你是為了貢獻特定頻率而來，而非僅僅為了個人學習。
+        </div>
+
+        <h3>簽署靈魂契約</h3>
+        <p>這份契約並非紙本文件，而是一組銘刻在你光體中的能量編碼。契約中詳細載明了你的核心任務：</p>
+        <ul>
+            <li><strong>頻率錨定：</strong>同意在特定地理位置或家族中，保持特定的高頻振動。</li>
+            <li><strong>基因修復：</strong>同意進入受損的人類基因庫，從內部進行修復與升級。</li>
+            <li><strong>覺醒觸發點：</strong>設定生命中特定的時間點（如30歲、40歲），在此時必須憶起真實身分，開始執行任務。</li>
+        </ul>
+
+        <h3>選擇父母與遺傳譜系：最艱難的決定</h3>
+        <p>這或許是混種星際種子最難以接受的概念之一：<strong>是你選擇了你的父母，甚至是你選擇了那些充滿創傷的家庭環境。</strong></p>
+        <p>許多星際種子出生在功能失調、情感疏離，甚至是充滿虐待的家庭中。這在邏輯上似乎不合理：如果帶著神聖任務而來，為何不選擇一對充滿愛、靈性高超的父母來支持自己？答案在於「基因工程」與「血脈清理」。</p>
+
+        <h4>1. 為了基因兼容性（Genetic Compatibility）</h4>
+        <p>混種靈魂需要一個特殊的生物容器（肉身）來承載其高伏特的能量。你選擇的家族系譜，往往在遠古時期就與星際文明有過接觸，或是其DNA中含有特定的隱性標記（Markers）。這些標記雖然可能表現為家族遺傳病、精神敏感性或特殊的藝術天賦，但它們是你能成功「著陸」的停機坪。</p>
+
+        <h4>2. 為了血脈清理（Lineage Clearing）</h4>
+        <p>這是最英勇的任務部分。透過投生到一個累積了深重業力（如成癮、暴力、貧窮意識）的家族，你同意成為那個「終結者」。</p>
+        <p>混種星際種子進入這些血脈，就像是將一顆強力淨化劑投入受污染的河流。你的存在本身，以及你在成長過程中克服創傷的努力，實際上是在燃燒並轉化這個家族數百年來累積的負面模式。當你療癒了自己與父母的關係，你不僅解救了自己，也回溯療癒了祖先，並為後代清除了障礙。這被稱為「七代療癒」（Healing of Seven Generations）。</p>
+
+        <h3>遺忘的帷幕（The Veil of Forgetfulness）</h3>
+        <p>在藍圖制定完畢後，你面臨著最後一道關卡：遺忘之河。為什麼必須忘記自己是誰？為什麼不帶著所有的星際記憶和超能力降臨？這看起來不是更有效率嗎？</p>
+        <p>「遺忘」實際上是地球遊戲規則中最關鍵的保護機制與實驗條件：</p>
+        <ul>
+            <li><strong>保護機制：</strong>如果一個嬰兒擁有完整的五維意識，地球三維的稠密波動（恐懼、謊言、痛苦）會對其造成毀滅性的心理衝擊，甚至導致肉體夭折。遺忘是一層緩衝墊，讓你慢慢適應這裡的重力。</li>
+            <li><strong>自由意志的測試：</strong>如果知道答案，考試就沒有意義。任務的核心在於，你能在「完全不知道自己是光」的情況下，重新「選擇成為光」嗎？這種在黑暗中重新點燃火焰的過程，能產生宇宙中最強大的轉化能量。</li>
+        </ul>
+
+        <h3>時間線與星象的精確校準</h3>
+        <p>你出生的時間（年月日時分）絕非隨機。星盤（Astrological Chart）是你進入地球大氣層時獲得的能量身分證，也是解碼你靈魂藍圖的鑰匙。</p>
+        <p>混種星際種子通常會選擇極具張力的星象配置。例如：</p>
+        <ul>
+            <li><strong>強烈的天王星、海王星或冥王星相位：</strong>這代表著變革、靈性消融與深度轉化。</li>
+            <li><strong>特定的恆星連線：</strong>你的太陽、月亮或上升星座可能與天狼星（Sirius）、大角星（Arcturus）或昴宿星團（Pleiades）呈現精確的角度。這確保了你與母星的通訊管道在能量層面上保持暢通。</li>
+            <li><strong>南北交點的特殊位置：</strong>指示了你從哪裡來（南交點的業力慣性）以及你此生要往哪裡去（北交點的進化方向）。</li>
+        </ul>
+        <p>許多在1970年代後出生的「靛藍兒童」（Indigo Children）、1990年代後的「水晶兒童」（Crystal Children）以及更近期的「彩虹兒童」，都是配合特定的地球能量門戶開啟時間而集體投生的。這是一波又一波的支援部隊。</p>
+
+        <h3>接受你的劇本</h3>
+        <p>理解了這份靈魂契約，我們就能開始改變對人生的受害者心態。那些你在成長過程中經歷的孤獨、被誤解、甚至是背叛，都不是為了摧毀你，而是你藍圖中的「訓練關卡」。</p>
+        <p>就像特種部隊在執行任務前需要接受極限訓練一樣，地球上的早期創傷往往是為了鍛鍊你的同理心、界線感以及在黑暗中持守光的能力。你是自己劇本的編劇，也是主角。現在，你已經長大，已經覺醒，是時候閱讀劇本的下一頁，看看如何操作這具充滿張力的生物載具了。</p>
+    </section>
+
+    <!-- 第三章 (翡翠綠) -->
+    <section id="ch3" class="chapter" style="--theme-color: #218c74; --theme-bg: #f0fffa;">
+        <h2 class="chapter-title">第三章：雙重DNA的張力：生物學與能量場</h2>
+        <p>如果說靈魂契約是軟體程式碼，那麼你的肉身就是執行這套程式的硬體設備。對於混種星際種子而言，最大的挑戰往往不是靈性層面的迷惘，而是物理層面的「不相容」。你是否常感覺到自己的身體像是一件過於緊繃的衣服？或者常經歷現代醫學無法解釋的怪病、過敏與慢性疲勞？</p>
+        <p>這不是因為你身體虛弱，而是因為你試圖將「核電廠」等級的能量，輸入到僅能負荷「電池」電壓的線路中。本章將帶你從生物學與量子物理學的交界處，理解混種星際種子獨特的生理結構與DNA張力。</p>
+
+        <h3>生物宇航服的限制與壓縮</h3>
+        <p>在更高維度，形式（Form）是流動的、光的、瞬間顯化的。然而在地球，我們居住在碳基生物體（Carbon-based biology）中。這具身體受制於重力、線性時間以及熵（Entropy，即衰變）。</p>
+        <p>對於混種靈魂來說，進入肉身的過程通常被描述為一種極度的「壓縮感」或「墜落感」。許多星際種子在嬰兒時期會表現出過度的哭鬧，或者在成長過程中有嚴重的感官統合失調，這其實是因為他們的乙太體（Etheric Body）尚未能與物質身體完全對齊。這種錯位感會導致一種深層的焦慮：感覺自己隨時會「飄走」，或是感覺身體像是一個沉重的鐵籠。</p>
+
+        <h3>隱性DNA與光碼接收器</h3>
+        <p>現代科學家在研究人類基因組時發現，約有95%到98%的DNA不負責編碼蛋白質，因此曾被粗暴地稱為「垃圾DNA」（Junk DNA）。然而，隨著表觀遺傳學（Epigenetics）與量子生物學的發展，這個觀點正在被推翻。</p>
+        <div class="highlight-box">
+            <strong>多維度視角：</strong><br>
+            對於混種星際種子而言，這所謂的「垃圾DNA」實際上是你的<strong>星際資料庫</strong>。它是休眠的、非線性的、量子的。它包含了你的星際記憶、超感官能力的開關，以及你與母星文明的通訊協議。
+        </div>
+        <p>混種星際種子的DNA結構中，嵌入了來自天狼星、昴宿星或其他文明的「隱性標記」。這些標記在普通的顯微鏡下無法被看見，但在能量場中，它們像霓虹燈一樣閃耀。這些隱性DNA就像是電腦中的「壓縮檔」，等待特定的解壓密碼（頻率）來開啟。</p>
+
+        <h4>雙重螺旋的張力</h4>
+        <p>你的身體同時運作著兩套指令集：</p>
+        <ul>
+            <li><strong>地球祖先的指令：</strong>「生存、恐懼、戰或逃、繁衍、部落歸屬感。」這是為了適應地球嚴酷環境而演化出的爬蟲腦機制。</li>
+            <li><strong>星際靈魂的指令：</strong>「合一、無條件的愛、心靈感應、創造顯化。」這是五維以上的運作模式。</li>
+        </ul>
+        <p>這兩套指令經常在你的神經系統中打架。例如，當你面對衝突時，你的地球基因可能尖叫著要你攻擊或逃跑（恐懼），但你的星際基因卻要你保持慈悲並發送光（愛）。這種內在的拉扯，會在體內產生巨大的生物化學壓力（Cortisol vs. Oxytocin），導致混種星際種子常處於一種莫名的「內在戰爭」狀態。</p>
+
+        <h3>神經系統：高電壓的載體</h3>
+        <p>混種星際種子最脆弱，也最強大的系統，莫過於<strong>神經系統</strong>。神經系統是光（電流/資訊）在肉體中流動的高速公路。</p>
+        <p>由於你攜帶的能量頻率極高，你的神經系統必須長期處於「超頻」運作狀態。這就像是用一條細小的銅線去傳輸閃電。如果不加以護理，這種高強度的能量流動會導致「系統過熱」，表現為：</p>
+        <ul>
+            <li><strong>慢性疲勞症候群（CFS）與纖維肌痛：</strong>這通常不是能量不足，而是能量「堵塞」或「短路」。身體為了保護自己不被燒毀，強制進入休眠模式。</li>
+            <li><strong>自體免疫疾病：</strong>這是一個深刻的隱喻。身體的免疫系統無法識別你體內的某些高頻能量，誤將其視為「外來入侵者」而進行攻擊。這是靈魂頻率與肉體頻率尚未整合的典型徵兆。</li>
+            <li><strong>電磁波敏感症（EHS）：</strong>因為你的生物場（Bio-field）極度敏感且開放，你像是一根強力天線，會不自覺地接收周遭所有的Wi-Fi、手機訊號與他人的情緒電波，導致神經衰弱。</li>
+        </ul>
+
+        <h3>內分泌系統與脈輪的對應</h3>
+        <p>在生理層面上，內分泌腺體是脈輪（Chakras）的物質對應點。混種星際種子的腺體運作方式往往異於常人。</p>
+        <h4>松果體與腦下垂體（第三眼與頂輪）</h4>
+        <p>這兩個腺體是你的星際接收器。對於混種而言，這些腺體通常比一般人更活躍，甚至體積略大。然而，這也意味著它們更容易受到現代環境毒素（如氟化物）與鈣化的影響。當接收器受阻，你會感到劇烈的頭痛（通常在眉心或頭頂）、耳鳴（高頻下載聲）或嚴重的失眠。</p>
+        <h4>腎上腺（海底輪）</h4>
+        <p>這是最常見的故障點。由於地球的集體意識充滿了恐懼與生存焦慮，高敏感的星際種子很容易耗盡腎上腺素來應對外界。這導致了一種弔詭的狀態：<strong>靈性上極度覺醒，但在物質生存上卻感到無力與疲憊。</strong></p>
+
+        <h3>升級生物硬體：從碳基到矽基/水晶基</h3>
+        <p>我們目前正處於一個名為「生物轉變」（Biological Transmutation）的過程。這不僅僅是哲學上的說法，而是細胞層面的煉金術。混種星際種子的身體正在從以碳為基礎的結構（兩條DNA螺旋），慢慢轉變為能夠承載更多光子的水晶/矽基結構（多維度DNA激活）。</p>
+        <p>在這個過渡期，你需要像照顧精密儀器一樣照顧你的身體：</p>
+        <ul>
+            <li><strong>飲食的頻率：</strong>你可能會發現自己越來越無法忍受沉重的肉類、加工食品或酒精。身體會自然渴望「高振動食物」（生機飲食、蔬果），因為它們的光子含量較高，負擔較小。</li>
+            <li><strong>水的記憶：</strong>水是頻率的最佳導體。混種星際種子需要大量優質的水來協助神經系統的導電與排毒。</li>
+            <li><strong>接地（Grounding/Earthing）：</strong>這是最重要的一點。作為天線，你接收了太多的天際能量（陽電），如果不與地球接觸（陰電）形成迴路，這些能量會積累在體內造成發炎。赤腳踩在泥土上，對你來說不是休閒，而是生存必須的「放電程序」。</li>
+        </ul>
+
+        <h3>結語：身體是你的盟友</h3>
+        <p>請停止憎恨你的身體，停止抱怨它的脆弱與敏感。你的身體正在進行一項極其艱鉅的任務：它試圖在一個三維的世界裡，容納五維的靈魂。這就像是試圖在一個玻璃杯裡裝下整個海洋。</p>
+        <p>這種張力雖然痛苦，但它正是進化的動力。每一次的身體不適，都是一次校準的機會，提示著哪裡還有阻礙，哪裡需要更多的愛與光。當你開始將身體視為神聖的殿堂與合作夥伴，而不是囚禁靈魂的牢籠時，那種雙重DNA的拉扯就會開始轉化為和諧的共舞。</p>
+    </section>
+
+    <!-- 第四章 (晨曦橘) -->
+    <section id="ch4" class="chapter" style="--theme-color: #e67e22; --theme-bg: #fffbf0;">
+        <h2 class="chapter-title">第四章：覺醒的徵兆：從迷惘到憶起</h2>
+        <p>覺醒，在靈性書籍中常被描繪成充滿愛與光、伴隨著天使合唱的祥和時刻。然而，對於身處地球稠密物質層的混種星際種子而言，覺醒往往更像是一場發生在凌晨三點的火災警報：刺耳、混亂，且徹底粉碎了你原本熟睡的夢境。</p>
+        <p>這不是一個線性的過程，而是一個螺旋上升的旅程。你可能在童年時期就曾瞥見真相，卻在成長過程中被迫遺忘，直到某個巨大的生命衝擊將那層保護膜撕裂。本章將繪製這張地圖，從早期的異質感，到靈魂暗夜的掙扎，再到最終的記憶重啟，幫助你確認自己正處於旅程的哪個座標。</p>
+
+        <h3>第一階段：異鄉的孤兒（童年期）</h3>
+        <p>對於絕大多數混種星際種子來說，一種深層的「錯誤感」早在語言能力發展之前就已存在。這不僅僅是心理學上的孤獨，而是一種本體論上的錯位。</p>
+        <h4>1. 尋找真正的父母</h4>
+        <p>你是否曾在小時候看著自己的親生父母，心裡卻浮現出一個奇怪的念頭：「他們很好，但他們不是我真正的父母」？這並非指你是被收養的，而是你的靈魂認出這對人類父母的頻率與你截然不同。你可能感覺自己是被「寄放」在這個家庭裡，等待著真正的家人（星際家族）來接你回家。</p>
+        <h4>2. 對謊言的極度過敏</h4>
+        <p>混種兒童通常具有天生的心靈感應能力。你聽得到大人嘴上說的話，同時也「聽」得到他們心裡想的事。當這兩者不一致時（即人類社會常見的社交謊言），你會感到極度的困惑與痛苦。這種對不真誠（Inauthenticity）的生理性排斥，常導致混種兒童被貼上「難搞」、「孤僻」或「自閉」的標籤。</p>
+        <h4>3. 仰望星空的鄉愁</h4>
+        <p>這是一個經典徵兆：在夜晚，你總是無法控制地凝視星空，對著某個特定的方位流淚，或是請求星星帶你回去。那是一種撕心裂肺的思鄉病（Hiraeth），渴望回到一個充滿無條件之愛、沒有競爭與恐懼的地方。</p>
+
+        <h3>第二階段：偽裝與適應（潛伏期）</h3>
+        <p>為了在地球生存，特別是在充滿創傷或高度社會化的學校系統中，混種星際種子學會了「偽裝」（Masking）。你觀察人類的行為模式，他們如何笑、如何談論瑣事、如何競爭，然後你開始模仿。</p>
+        <p>你關閉了自己的超感官知覺，壓抑了自己的光芒，試圖讓自己變得「正常」。這段時期可能持續數十年。你看起來像個完美的地球人：你有工作、有伴侶、繳稅、抱怨天氣。但你的內心卻像是一個空殼，一種慢性的低落感（Dysthymia）始終揮之不去。你活在「矩陣」（The Matrix）之中，雖然身體在運作，但靈魂卻在沉睡。</p>
+
+        <h3>第三階段：靈魂暗夜（崩塌期）</h3>
+        <p>這是混種旅程中最危險，卻也最必要的階段。為了打破你精心構建的「人類面具」，宇宙通常會安排一系列的崩塌事件。這就是著名的「靈魂暗夜」（Dark Night of the Soul）。</p>
+        <p>觸發點可能是一場突如其來的重病、離婚、失業，或是親人的離世。這些事件的共同點是：<strong>它們剝奪了你原本依賴的所有身分認同。</strong></p>
+        <blockquote>
+            「在你成為你注定要成為的人之前，你必須先不再是你以為的自己。」
+        </blockquote>
+        <p>在這個階段，你會感到被神遺棄。所有的舊結構都瓦解了，但新的實相尚未建立。對於混種星際種子來說，這是一種「排毒反應」。你的系統正在劇烈地燃燒掉那些不屬於你的地球編程（恐懼、匱乏、無價值感）。這雖然痛苦，但唯有如此，深埋在你DNA中的星際編碼才有空間被激活。</p>
+
+        <h3>第四階段：覺醒與記憶重啟（激活期）</h3>
+        <p>當你在靈魂暗夜的灰燼中重生時，真正的魔法開始發生。觸發事件（Trigger Event）出現了，它像是一把鑰匙，插入了你意識的鎖孔。</p>
+        <div class="highlight-box">
+            <strong>🚨 關鍵覺醒徵兆檢核表</strong>
+            <ul>
+                <li><strong>數字同步性：</strong>瘋狂地看到 11:11, 3:33, 4:44 或重複數字。這不是巧合，這是來自維度彼端的「喚醒鬧鐘」與確認訊號。</li>
+                <li><strong>耳鳴與下載：</strong>左耳或右耳出現高頻的尖銳聲響，伴隨著突如其來的直覺靈感。這是你的神經系統正在接收壓縮的數據包。</li>
+                <li><strong>對舊生活的厭惡：</strong>突然無法忍受原本的工作、人際關係或飲食習慣。你覺得原本的生活像是別人的劇本。</li>
+                <li><strong>對神祕學的飢渴：</strong>突然對量子物理、外星文明、水晶、能量療法產生無法抑制的求知慾。你不是在學習新知識，你是在「複習」你早已知曉的事物。</li>
+                <li><strong>強烈的使命感：</strong>一種「我還有事沒做」、「時間不多了」的急迫感（Mission Urgency）油然而生，儘管你還不知道任務具體是什麼。</li>
+            </ul>
+        </div>
+
+        <h3>第五階段：整合與部落重聚</h3>
+        <p>覺醒的最後階段不是離開地球，而是「落地」。你不再渴望逃離，而是開始理解你為何而來。你開始遇見你的「靈魂部落」（Soul Tribe），那些和你擁有相同頻率的人。只要看一眼他們的眼睛，你就知道你們來自同一個地方。</p>
+        <p>你開始整合你的雙重身分：你既是神聖的，也是凡人的；你既是星際的，也是地球的。你不再隱藏自己的敏感，而是將其視為探測能量的雷達。你不再試圖修復那個破碎的舊世界，而是開始專注於創造新地球的頻率。</p>
+        <h4>關於「瘋狂」的恐懼</h4>
+        <p>在這一章的結尾，必須提及一個幾乎所有覺醒者都會面臨的恐懼：「我是不是瘋了？」</p>
+        <p>當你開始感知到非物質界的存在，或是回憶起非地球的前世記憶時，理智腦會試圖否定這一切。請記住，在一個病態的社會裡，能夠適應良好並不是健康的指標。你的「瘋狂」其實是從集體的幻夢中清醒過來。你正在恢復神智，而不是失去它。</p>
+    </section>
+
+    <!-- 第五章 (銀河紫) -->
+    <section id="ch5" class="chapter" style="--theme-color: #5758BB; --theme-bg: #f2f2ff;">
+        <h2 class="chapter-title">第五章：星際家園的印記：主要文明頻率</h2>
+        <p>當你開始憶起自己不屬於這裡時，隨之而來的問題便是：「那我來自哪裡？」宇宙浩瀚無垠，星系如沙數，但對於目前投生在地球上的混種星際種子而言，主要有幾個關鍵的星系文明扮演著「種子庫」與「指導者」的角色。</p>
+        <p>你的靈魂可能經歷過多個星系的旅程，但在你的能量場中，通常會有一個最強烈的「主頻率」（Primary Frequency）。這就像是你的靈魂口音，透露了你的起源地。本章將詳細介紹與地球揚升計畫最密切相關的三大星際家族：昴宿星、天狼星與大角星，並簡述仙女座與天琴座的特質，幫助你進行靈魂辨識。</p>
+
+        <h3>1. 昴宿星人（Pleiadians）：愛的治療師與美的創造者</h3>
+        <p>昴宿星團（Seven Sisters）距離地球相對較近，是我們在銀河系中的近親。如果說地球正在經歷小學階段的學習，昴宿星則像是剛剛畢業的大哥哥大姊姊，充滿了關懷與同理心。他們是心輪的守護者。</p>
+        <h4>能量特質</h4>
+        <p>昴宿星混種通常攜帶著極度柔和、溫暖與滋養的能量。他們的存在本身就像是一股清泉。對於地球上的暴力與粗糙，他們是最敏感的一群。</p>
+        <div class="trait-list" style="border: 2px solid var(--theme-color); padding: 20px; border-radius: 8px;">
+            <strong>🌟 昴宿星混種辨識特徵</strong>
+            <ul>
+                <li><strong>情感高度敏感：</strong>你是天生的「情緒海綿」，走進一個房間就能感受到所有人的悲傷或快樂。</li>
+                <li><strong>對美的執著：</strong>無法忍受醜陋或混亂的環境。通常從事藝術、設計、音樂或與美相關的工作。</li>
+                <li><strong>療癒天賦：</strong>雙手通常有熱氣，對能量療法（Reiki）、芳療、草藥有天生的直覺。</li>
+                <li><strong>人際關係導向：</strong>比起科技或邏輯，你更在乎「愛」與「連結」。你的主要挑戰通常來自於邊界感薄弱，容易過度付出。</li>
+            </ul>
+        </div>
+
+        <h3>2. 天狼星人（Sirians）：智慧的守護者與變革戰士</h3>
+        <p>天狼星（Sirius）是夜空中最亮的恆星，在古埃及文明中具有至高無上的地位。天狼星文明高度先進，結合了強大的科技與深邃的靈性。如果昴宿星人是溫柔的護士，天狼星人就是手持光劍的絕地武士或掌握奧祕的煉金術士。</p>
+        <h4>能量特質</h4>
+        <p>天狼星混種的能量場通常較為「厚實」且帶有權威感。他們是行動派，是為了打破舊體制、建立新結構而來的。他們對於幾何神聖學、海洋生物（如鯨豚）以及古代歷史有著深層的連結。</p>
+        <div class="trait-list" style="border: 2px solid var(--theme-color); padding: 20px; border-radius: 8px;">
+            <strong>⚔️ 天狼星混種辨識特徵</strong>
+            <ul>
+                <li><strong>戰士精神：</strong>對於不公不義的事情無法坐視不管。你是環保鬥士、動物權益捍衛者或社會改革者。</li>
+                <li><strong>科技與神祕學的結合：</strong>擅長將靈性概念系統化。你可能是工程師、程式設計師，或是研究金字塔能量的學者。</li>
+                <li><strong>與水元素的連結：</strong>熱愛海洋，甚至感覺自己在水裡比在陸地上更自在。夢境中常出現水底城市或與海豚溝通的場景。</li>
+                <li><strong>直率且難以親近：</strong>比起昴宿星人的溫暖，你可能給人一種冷靜、甚至有點疏離的感覺。你不喜歡廢話，直指核心。</li>
+            </ul>
+        </div>
+
+        <h3>3. 大角星人（Arcturians）：高維度的建築師與精神導師</h3>
+        <p>大角星（Arcturus）被譽為銀河系中最先進的文明之一，主要運作在五維至九維之間。他們是集體意識的大師，擁有極度發達的邏輯與心靈科技。大角星混種通常擔任「精神藍圖」的持有者。</p>
+        <h4>能量特質</h4>
+        <p>大角星能量是極度精微、幾何化且帶有強烈色彩（特別是電光藍與紫）的。這類混種星際種子在地球上往往是思想領袖、哲學家或高階靈性導師。他們的思維模式是非線性的。</p>
+        <div class="trait-list" style="border: 2px solid var(--theme-color); padding: 20px; border-radius: 8px;">
+            <strong>📐 大角星混種辨識特徵</strong>
+            <ul>
+                <li><strong>抽像思維：</strong>從小就對數學、幾何圖形、密碼或符號著迷。你能理解複雜的系統結構。</li>
+                <li><strong>冷靜的觀察者：</strong>情緒波動極小。在危機時刻，你是眾人中唯一保持冷靜與客觀的人。</li>
+                <li><strong>強大的心靈感應：</strong>你不需要透過語言，就能直接讀取對方的意圖或思想形式。</li>
+                <li><strong>對聲光科技的興趣：</strong>對於使用聲音（缽、音叉）或光頻進行療癒有極高的天賦。</li>
+            </ul>
+        </div>
+
+        <h3>4. 其他重要家族：仙女座與天琴座</h3>
+        
+        <div class="trait-list" style="border: 2px solid var(--theme-color); padding: 20px; border-radius: 8px;">
+            <strong>🌌 仙女座人 (Andromedans)：自由的追求者與系統破壞者</strong>
+            <p>來自仙女座星系，這是距離銀河系最近的螺旋星系。仙女座混種是終極的自由靈魂，他們對於任何形式的控制、奴役與限制有著本能的厭惡。在地球上，他們經常感到時間的壓迫感，因為在他們的家鄉，時間是非線性的。</p>
+            <ul>
+                <li><strong>流浪者天性：</strong>經常是不安分的旅行者，不斷地更換工作、居住地或興趣。穩定對他們來說等於停滯。</li>
+                <li><strong>系統破壞者：</strong>他們來到地球是為了打破僵化的舊系統。他們不一定透過激烈的抗爭，而是透過活出絕對的自由來啟發他人。</li>
+                <li><strong>適應力強：</strong>雖然內心嚮往自由，但他們擁有極強的適應力，能在各種艱難環境中生存。</li>
+            </ul>
+        </div>
+
+        <div class="trait-list" style="border: 2px solid var(--theme-color); padding: 20px; border-radius: 8px; margin-top: 20px;">
+            <strong>🦁 天琴座人 (Lyrans)：古老的開拓者與智慧長者</strong>
+            <p>天琴座被認為是銀河系人形生命的搖籃，是許多星際種族的共同祖先。因此，天琴座混種具有一種古老、歷經滄桑的智慧感。他們像是家族中的老祖宗，充滿了故事與歷史，並且與貓科動物（如獅子、貓）有著特殊的連結。</p>
+            <ul>
+                <li><strong>強大的領導力：</strong>天生具有權威感與領袖氣質，不需要大聲疾呼就能讓人信服。</li>
+                <li><strong>開拓精神：</strong>喜歡從無到有建立事物，享受體力勞動或創造性的建設工作。</li>
+                <li><strong>忠誠與保護：</strong>對於他們認定的人（家人或朋友）有著極度的忠誠與保護欲。</li>
+                <li><strong>享受物質：</strong>不同於其他飄逸的星際種子，天琴座人很懂得享受地球的物質生活（美食、舒適），並且非常接地氣。</li>
+            </ul>
+        </div>
+
+        <h3>如何確認你的主頻率？</h3>
+        <p>閱讀至此，你可能發現自己對上述多個特徵都有共鳴。這很正常，因為作為混種，你可能是一個「星際混血兒」，融合了多個文明的基因。然而，通常會有一個最主要的來源。</p>
+        <p>請嘗試以下簡單的測試：</p>
+        <ol>
+            <li>閉上眼睛，深呼吸，讓心平靜下來。</li>
+            <li>依序默念「昴宿星」、「天狼星」、「大角星」。</li>
+            <li>留意你的身體反應。哪一個名字讓你感到心跳加速、流淚、發熱，或是有一種莫名的「這是對的」（Rightness）的感覺？</li>
+            <li>不要用大腦分析，相信身體的第一直覺。</li>
+        </ol>
+        <blockquote>
+            「不管你來自哪顆星，重要的是你現在就在這裡。你的星際身分不是為了讓你逃避地球，而是為了讓你將那天上的光，帶入這地上的泥土之中。」
+        </blockquote>
+        <p>了解你的星際起源，是為了讓你更了解自己的「使用說明書」。天狼星人需要戰鬥與行動來獲得能量，昴宿星人需要美與和諧來充電。當你順應原本的設計運作，地球生活將不再那麼艱難。</p>
+    </section>
+
+    <!-- 第六章 (鼠尾草綠) -->
+    <section id="ch6" class="chapter" style="--theme-color: #6ab04c; --theme-bg: #f6fff0;">
+        <h2 class="chapter-title">第六章：身心症狀與能量護理</h2>
+        <div class="disclaimer-box" style="border: 2px solid #e74c3c; padding: 15px; border-radius: 6px; color: #c0392b; font-weight: bold; margin-bottom: 25px;">
+            ⚠️ 醫療免責聲明：<br>
+            本章內容僅供靈性參考，不能替代專業醫療建議。若您有嚴重的身體不適，請務必先尋求正規醫學檢查，排除生理病變。星際能量的整合通常是在排除病理原因後，剩餘無法解釋的部分。
+        </div>
+
+        <p>作為一名混種星際種子，你可能經常覺得自己的身體像是一個正在進行軟體更新的老舊電腦：發燙、卡頓、甚至偶爾當機。這不是因為你「病了」，而是因為你正在經歷「揚升症狀」（Ascension Symptoms）。</p>
+        <p>當高維度的光子能量大量湧入你的碳基肉身時，會產生劇烈的摩擦與排毒反應。你的細胞正在釋放舊有的創傷記憶，並試圖容納更高的電壓。本章將為你解碼這些奇怪的身心反應，並提供一套實用的「星際急救箱」。</p>
+
+        <h3>常見的生理揚升症狀</h3>
+        <p>這些症狀通常具有週期性：它們會隨著宇宙能量波（如滿月、太陽閃焰、星門開啟）的到來而加劇，隨後又莫名消失。</p>
+
+        <div class="symptom-card">
+            <strong>1. 神祕的耳鳴與高頻聲響</strong>
+            <p>這不是聽力受損。你聽到的高頻尖銳聲（有時像摩斯密碼般斷續），其實是「下載訊號」。你的高我與星際團隊正在傳輸壓縮的數據包給你。試著放鬆，不要對抗聲音，並在心中意念：「我準備好接收，請調整音量至舒適範圍。」</p>
+        </div>
+
+        <div class="symptom-card">
+            <strong>2. 極度疲勞與嗜睡</strong>
+            <p>即使睡了10個小時，醒來還是覺得被卡車碾過一樣累。這是因為你在睡眠中進行大量的「夜間工作」（在乙太層面上課、開會或進行能量修復）。身體需要大量的能量來整合這些變化。請允許自己休息，這是「系統重組」的必要過程。</p>
+        </div>
+
+        <div class="symptom-card">
+            <strong>3. 飲食習慣的驟變與食物過敏</strong>
+            <p>你突然無法忍受以前愛吃的肉類、酒精或加工食品。吃了之後會感到沉重、脹氣或起疹子。這是因為你的頻率提升了，身體開始拒絕「低頻能量」的物質。你的身體正在請求更輕盈、充滿光子能量的食物（如新鮮蔬果、純淨水）。</p>
+        </div>
+
+        <div class="symptom-card">
+            <strong>4. 電流感與震動</strong>
+            <p>在靜坐或入睡前，感覺體內有電流流竄，或是身體內部在震動（雖然外表看不出來）。這是昆達里尼（Kundalini）能量或中脈被激活的徵兆。你的神經系統正在被「擴容」。</p>
+        </div>
+
+        <h3>心理與情緒的雲霄飛車</h3>
+        <p>除了肉體，情緒體也在經歷大清洗。你可能會經歷：</p>
+        <ul>
+            <li><strong>突如其來的悲傷：</strong>沒有特定原因地大哭。這是你在釋放累世的集體悲傷，或是蓋亞母親的痛苦。</li>
+            <li><strong>腦霧（Brain Fog）：</strong>無法專注，忘記剛剛要說什麼，甚至忘記基本詞彙。這是因為你的意識正在從左腦（線性邏輯）切換到右腦（直覺全像），甚至是在不同維度間切換時的「時差」反應。</li>
+            <li><strong>這不是我的家：</strong>週期性發作的強烈孤獨感與歸鄉渴望。</li>
+        </ul>
+
+        <h3>混種星際種子的能量護理工具箱</h3>
+        <p>既然我們無法停止揚升過程，我們必須學會如何「衝浪」。以下是經過驗證，能有效緩解症狀的能量護理技巧。</p>
+
+        <h4>1. 海鹽淨化浴（Salt Water Cleansing）</h4>
+        <p>這是最便宜也最強大的工具。水是情緒的導體，鹽是負能量的吸塵器。</p>
+        <ul>
+            <li><strong>方法：</strong>每週至少一次，在浴缸中加入2杯海鹽（或瀉鹽 Epsom Salt）和半杯小蘇打。浸泡20分鐘。</li>
+            <li><strong>意念：</strong>想像水將你氣場中沾黏的負面乙太碎片、他人的情緒投射全部吸走，隨著排水孔流走。這對高敏感的混種人來說是救命稻草。</li>
+        </ul>
+
+        <h4>2. 接地練習（Grounding/Earthing）</h4>
+        <p>混種星際種子最大的問題是「飄」。你的天線太發達，但根基不穩，導致焦慮與短路。</p>
+        <ul>
+            <li><strong>赤腳踩地：</strong>每天至少10分鐘，赤腳踩在草地、泥土或沙灘上。透過物理接觸，地球的自由電子會中和體內的自由基與發炎症狀。</li>
+            <li><strong>樹木擁抱：</strong>背靠著一棵大樹，請求樹木協助你將過剩的電荷導入地下。</li>
+        </ul>
+
+        <h4>3. 建立能量防護罩（12D Shielding）</h4>
+        <p>不要在沒有防護的情況下出門。你的開放氣場會無意識地吸附周遭的垃圾。</p>
+        <ul>
+            <li><strong>早晨儀式：</strong>起床後，觀想一道白金色的光柱從宇宙源頭降下，包圍你的全身，直通地心。設定意圖：「只有符合神聖之愛與光的能量可以進入我的場域，其他一切都被彈開。」</li>
+        </ul>
+
+        <h4>4. 數位排毒與水晶輔助</h4>
+        <p>由於對電磁波敏感，睡覺時請務必關閉Wi-Fi，手機開飛航模式。</p>
+        <ul>
+            <li><strong>黑碧璽（Black Tourmaline）：</strong>最強大的接地與防護石，放在電腦旁或佩戴在身上。</li>
+            <li><strong>紫水晶（Amethyst）：</strong>協助轉化負能量，並保護頂輪不受干擾。</li>
+            <li><strong>拉長石（Labradorite）：</strong>被稱為「魔法師之石」，能修復氣場破洞，非常適合星際種子。</li>
+        </ul>
+
+        <h3>與身體結盟</h3>
+        <blockquote>
+            「你的身體不是你的障礙，它是你在這個維度的聖殿，是你執行任務的太空船。」
+        </blockquote>
+        <p>請停止對身體的抱怨與憎恨。當痛楚來襲時，試著與那個部位對話：「親愛的身體，我知道你在升級，辛苦你了。我愛你，我支持你。」這種慈悲的頻率能瞬間降低身體的抵抗與發炎反應。</p>
+        <p>記住，你正在進行一項前所未有的實驗：將碳基身體轉化為矽基光體（Crystalline Light Body）。這不舒服是正常的，這代表計畫正在奏效。</p>
+        <p>當我們學會了照顧這具生物載具，接下來，我們將探討混種星際種子在地球上最棘手的課題：人際關係。為什麼我們總是吸引能量吸血鬼？為什麼我們的家庭關係如此疏離？下一章將為你揭曉。</p>
+    </section>
+
+    <!-- 第七章 (玫瑰紅) -->
+    <section id="ch7" class="chapter" style="--theme-color: #eb4d4b; --theme-bg: #fff5f5;">
+        <h2 class="chapter-title">第七章：人際關係與鏡像投射</h2>
+        <p>如果在上一章我們討論的是身體的疼痛，那麼這一章，我們要面對的是心的撕裂。對於混種星際種子而言，人際關係往往是地球學校中最艱難的必修課。</p>
+        <p>你是否經常感到疑惑：為什麼你付出了那麼多愛，卻換來背叛或冷漠？為什麼你總是吸引那些需要被「拯救」的人？為什麼在人群中，即便你什麼都沒做，有些人也會莫名地對你產生敵意？這不是你運氣不好，這是<strong>物理學</strong>：是高頻光體在稠密環境中產生的必然效應。這就是「鏡像效應」。</p>
+
+        <h3>鏡像效應：無意識的挑釁者</h3>
+        <p>混種星際種子的能量場是極度純淨且具穿透力的。當你站在一個人面前，即便你不說話，你的振動頻率也會自動照亮對方潛意識中最黑暗的角落。你是一面行走的光之鏡。</p>
+        <p>對於那些不願意面對自己陰影（如羞愧、嫉妒、未癒合的創傷）的人來說，你的存在是一種威脅。你的光芒無意中刺痛了他們，迫使他們看見自己內在的污點。</p>
+        <div class="psych-box" style="border-left: 4px solid var(--theme-color); padding: 20px; background: rgba(255,255,255,0.7);">
+            <strong>🧠 心理機制解析</strong>
+            <p>人類的防衛機制是：「如果這面鏡子讓我看到我不喜歡的自己，那我就打破這面鏡子。」這就是為什麼有些人會莫名攻擊你、誹謗你或排擠你。他們攻擊的不是你，而是他們在你身上看到的、他們無法接受的自己。</p>
+        </div>
+
+        <h3>致命的吸引力：共感人與自戀者</h3>
+        <p>這是靈性圈中最常見、也最痛苦的關係劇本：混種星際種子（通常是極度敏感的共感人 Empath）與自戀型人格（Narcissist）或能量吸血鬼的糾纏。</p>
+        <p>為什麼這種搭配如此普遍？</p>
+        <ul>
+            <li><strong>光的渴望與供給：</strong>自戀者內在是空虛的黑洞，他們渴望光。而你，擁有取之不盡的星際光源。你就像是一個移動的發電廠，對於渴望能量的人來說具有致命的吸引力。</li>
+            <li><strong>拯救者情結：</strong>許多混種星際種子帶有「療癒師」的編碼。當你看到受傷的靈魂（即使那個靈魂隱藏在傲慢的面具下），你的本能是去愛他、治好他。你誤以為只要給予足夠的愛，就能轉化對方。</li>
+        </ul>
+        <p>這是一個危險的陷阱。這堂課要教導你的是：<strong>你不能療癒那些不想被療癒的人。</strong>你的任務是發光，而不是讓自己燃燒殆盡來溫暖別人。</p>
+
+        <h3>原生家庭：黑羊與破壁者</h3>
+        <p>正如第二章所述，你選擇了特定的血脈來進行清理。這意味著，在你的原生家庭中，你往往扮演著「黑羊」（Black Sheep）的角色。或者更準確地說，你是「破壁者」。</p>
+        <p>你可能是家族中第一個拒絕遵循傳統、第一個談論靈性、或是第一個打破世代創傷循環（如成癮、暴力）的人。你的家人可能會覺得你是異類，試圖將你拉回舊有的模式中。這會讓你感到極度的疏離與孤獨，因為最應該支持你的人，往往是最不理解你的人。</p>
+        <blockquote>
+            「親愛的，別為了讓別人感到舒適而調暗你的光。你的不同，正是這個家族需要的解藥。」
+        </blockquote>
+        <p>處理原生家庭課題的關鍵在於「放下期待」。放下期待他們能理解你，放下期待他們能變成你理想中的父母。當你停止向枯井求水，你才能真正獲得自由。</p>
+
+        <h3>雙生火焰（Twin Flames）：終極的鏡像</h3>
+        <p>許多星際種子執著於尋找「雙生火焰」。然而，這個概念在地球上被過度浪漫化了。真正的雙生火焰相遇，往往不是迪士尼童話，而是一場靈性的核爆。</p>
+        <p>雙生火焰是你靈魂的另一半極性。當你們相遇，就像兩個強大的能量場對撞。目的不是為了讓你們過上幸福快樂的小日子，而是為了<strong>加速揚升</strong>。對方會毫不留情地觸發你所有未癒合的創傷、恐懼與執著。這是一種「火刑式」的清理。</p>
+        <p>對於混種星際種子來說，雙生火焰關係通常伴隨著巨大的挑戰與分離期（Runner/Chaser dynamic）。請記住，這段關係的重點在於回歸內在的完整，而不是外在的結合。如果你還沒學會愛自己，雙生火焰只會是一面放大你自我厭惡的鏡子。</p>
+
+        <h3>靈魂家族（Soul Family）：真正的歸屬</h3>
+        <p>雖然原生家庭和業力伴侶可能讓你心碎，但宇宙也為你準備了禮物：你的「靈魂家族」或「星際部落」。</p>
+        <p>這些人可能與你沒有血緣關係，甚至來自完全不同的文化背景，但當你遇見他們時，你會有一種「我認識你」的深層熟悉感。你們的頻率共振，交流毫不費力。不需要偽裝，不需要解釋，你可以完全做你自己。</p>
+        <p>在覺醒的後期階段，混種星際種子會開始像磁鐵一樣互相吸引，聚集成聚落。這些聚落（無論是實體還是線上）將成為新地球能量網格的節點。尋找他們，是你的權利，也是你的任務。</p>
+
+        <h3>本章結語：設立能量界線</h3>
+        <p>在地球這所學校，混種星際種子必須學會的最重要技能就是<strong>「設立界線」（Boundaries）</strong>。界線不是築牆，而是定義「哪裡是我，哪裡是你」。</p>
+        <p>慈悲不代表要當一塊腳踏墊。你可以愛一個人，但同時拒絕他的負面能量進入你的場域。學會說「不」，對星際種子來說，是一種最高級的靈性實踐。因為只有當你保護好自己的光，你才能持續地照亮這個世界。</p>
+    </section>
+
+    <!-- 第八章 (烈焰金) -->
+    <section id="ch8" class="chapter" style="--theme-color: #f0932b; --theme-bg: #fffaf0;">
+        <h2 class="chapter-title">第八章：任務與使命：從觀察者到行動者</h2>
+        <p>「我來這裡到底是為了做什麼？」這是每一位覺醒的混種星際種子每天都在問的問題。你可能覺得自己像是一個被空投到敵後的特工，卻遺失了任務簡報。你等待著那一通來自總部的電話，或是期待一艘飛船降落給你一張寫著「去拯救世界」的指令卡。但那一天從未到來，取而代之的是日復一日的平凡生活：繳帳單、工作、應付塞車。</p>
+        <p>這讓人沮喪，甚至讓你懷疑自己是否失敗了。本章旨在粉碎這種關於「使命」的好萊塢式幻想，並揭示真正的運作機制：<strong>你不是「去做」任務的，你「本身」就是任務。</strong></p>
+
+        <h3>存在的本身即是工作（Being vs. Doing）</h3>
+        <p>在三維世界，價值是透過「行動」和「產出」來衡量的。但在五維視角下，價值取決於「頻率」。</p>
+        <p>想像地球是一個充滿濁氣的密閉房間。混種星際種子就像是一台高性能的空氣清淨機。你不需要跑來跑去地大喊「空氣好髒！」，你只需要<strong>插上電源（連結源頭），然後站在那裡運轉</strong>。僅僅透過你的存在，透過你在呼吸中保持的高頻振動，你就正在淨化周遭的場域。</p>
+        <blockquote>
+            「你不需要試圖去改變世界，你只需要不被世界改變，世界就會因為你的存在而改變。」
+        </blockquote>
+        <p>然而，這並不意味著你只能在家裡打坐。星際任務通常分為四大類別。你可能同時身兼數職，或者在人生的不同階段切換角色。</p>
+
+        <h3>第一類：頻率持有者（The Frequency Holders）</h3>
+        <div class="mission-card">
+            <strong>📡 任務描述</strong>
+            <p>這類星際種子的主要工作是「維持振動」。你們是人類集體意識中的穩定器。當世界陷入恐慌（如疫情、戰爭、經濟崩潰）時，你們負責保持冷靜與和平的頻率，防止集體恐懼導致能量網格崩潰。</p>
+            <ul>
+                <li><strong>常見職業：</strong>看似平凡的工作，如收銀員、家庭主婦、保全、公務員。</li>
+                <li><strong>運作方式：</strong>你在排隊結帳時對店員的一個真誠微笑，可能就阻止了他當天稍晚的一場家庭暴力。你是隱形的能量針灸師。</li>
+            </ul>
+        </div>
+
+        <h3>第二類：網格工作者（The Gridworkers）</h3>
+        <div class="mission-card">
+            <strong>🌍 任務描述</strong>
+            <p>你們與蓋亞（地球母親）的能量線（Ley Lines）有深層連結。你們經常感到莫名的衝動要去旅行，去某些特定的地點（如馬丘比丘、甚至是某個不知名的小公園）。</p>
+            <ul>
+                <li><strong>常見行為：</strong>喜歡在自然中行走，會撿起石頭，或是在特定地點埋下水晶。</li>
+                <li><strong>運作方式：</strong>你們是地球的「光纖安裝員」。當你到達某地，你的身體作為導體，會將宇宙的高頻能量下載並錨定在該地的土地中，修復受損的地球脈輪。</li>
+            </ul>
+        </div>
+
+        <h3>第三類：轉化者（The Transmuters）</h3>
+        <div class="mission-card">
+            <strong>🔥 任務描述</strong>
+            <p>這是最艱難的任務，通常由那些擁有強大靈魂力量的混種擔任（尤其是天蠍座特質強烈者）。你們深入人類最黑暗的領域：成癮、虐待、貧窮、精神疾病。</p>
+            <ul>
+                <li><strong>運作方式：</strong>你們就像「靈性消化系統」。你們投生到充滿重業力的家族或環境中，親身經歷這些痛苦，然後在自己體內將其轉化為光。你們終結了世代相傳的創傷鏈，讓後代不再受苦。這不是受罰，這是最高級別的服務。</li>
+            </ul>
+        </div>
+
+        <h3>第四類：引路人與導師（The Wayshowers）</h3>
+        <div class="mission-card">
+            <strong>🕯️ 任務描述</strong>
+            <p>這類星際種子負責「發聲」與「展示」。當前三類工作者在幕後打好地基後，引路人負責站出來，用人類聽得懂的語言傳遞新意識。</p>
+            <ul>
+                <li><strong>常見職業：</strong>作家、藝術家、YouTuber、療癒師、演講者、新創企業家。</li>
+                <li><strong>運作方式：</strong>你們打破舊有的系統（教育、醫療、金融），並提出新的範本。你們是新地球的建築師，負責將五維的概念落實為三維的可行方案。</li>
+            </ul>
+        </div>
+
+        <h3>從「等待」到「創造」：如何啟動你的任務？</h3>
+        <p>如果你還在問「我的使命是什麼？」，這代表你還停留在觀察者模式。要切換到行動者模式，你不需要天使顯靈，你只需要遵循一個簡單的宇宙法則：<strong>跟隨你的興奮（Follow Your Excitement）。</strong></p>
+        <p>巴夏（Bashar）曾說過：「興奮感是身體對高我訊息的物理翻譯。」那些讓你感到充滿熱情、忘記時間的事情，就是你的任務線索。</p>
+        <ul>
+            <li>如果你喜歡烘焙，那就帶著愛去烘焙，那個蛋糕就是光之載體。</li>
+            <li>如果你喜歡寫程式，那就去寫出能幫助人連結的軟體。</li>
+            <li>如果你喜歡種花，你的花園就是一個能量漩渦。</li>
+        </ul>
+        <p>不要小看微小的行動。混種星際種子的陷阱在於「小我膨脹」（Ego Inflation），認為只有做大事（如拯救鯨魚、帶領百萬人靜心）才叫任務。事實上，在五維視角中，你在路邊救起一隻受傷小貓所產生的愛之頻率，與一場萬人演講是同等重要的。</p>
+
+        <h3>結語：你的簽字已經生效</h3>
+        <p>親愛的星際種子，請停止尋找任務，開始<strong>活出</strong>任務。你的呼吸是任務，你的步伐是任務，你的愛是任務。</p>
+        <p>當你不再試圖「做」一個外星人，而是在地球上完整地「做」一個人時，你的星際任務就自動完成了。因為正如我們所知，只有當根扎得越深，樹才能長得越高。</p>
+    </section>
+
+    <!-- 第九章 (黑曜石灰) -->
+    <section id="ch9" class="chapter" style="--theme-color: #2d3436; --theme-bg: #f1f2f6;">
+        <h2 class="chapter-title">第九章：整合陰影：地球二元性的試煉</h2>
+        <p>歡迎來到地球學校的高級課程。如果說前面的章節是關於「憶起你是光」，那麼這一章我們要討論的是「如何擁抱你的暗」。</p>
+        <p>對於來自高維度、習慣了合一意識（Oneness）的星際混種來說，地球最令人困惑、也最令人恐懼的特質，莫過於極端的「二元性」（Duality）：善與惡、男與女、光與影、受害者與加害者。這種撕裂感往往讓星際種子想要逃跑，或是躲進一個只有「愛與光」的粉紅色泡泡裡。然而，這正是陷阱所在。</p>
+
+        <h3>靈性逃避（Spiritual Bypassing）的誘惑</h3>
+        <p>許多星際種子，特別是那些對能量極度敏感的靈魂，很容易落入「靈性逃避」的陷阱。這是由心理學家約翰·韋爾伍德（John Welwood）創造的術語，指的是使用靈性觀念和修煉來迴避尚未解決的情緒創傷、心理傷口以及未完成的發展任務。</p>
+        <p>對星際混種而言，這通常表現為：</p>
+        <ul>
+            <li><strong>強制正向（Toxic Positivity）：</strong>拒絕承認憤怒、悲傷或嫉妒，認為這些是「低頻能量」，會降低自己的振動。</li>
+            <li><strong>過度超脫：</strong>當現實生活出現問題（如財務危機、人際衝突）時，用「這一切都是幻象」來合理化自己的不作為。</li>
+            <li><strong>評判人類性：</strong>認為人類的慾望、貪婪和競爭是骯髒的，並試圖切斷自己與這些「原始本能」的連結。</li>
+        </ul>
+        <div class="shadow-box" style="border: 2px solid var(--theme-color); padding: 20px; border-radius: 8px;">
+            <strong>⚠️ 警告：光的陰影</strong>
+            <p>你越是強迫自己只站在光裡，身後的影子就拉得越長。被壓抑的情緒不會消失，它們會潛入地下室（潛意識），在那裡發酵、變形，最終以疾病、上癮行為或突然的情緒爆發（Acting Out）反噬你。</p>
+        </div>
+
+        <h3>什麼是陰影（The Shadow）？</h3>
+        <p>心理學大師榮格（Carl Jung）定義「陰影」為我們人格中那些不被意識所接受、被壓抑或被否認的部分。但請注意，<strong>陰影並不等於邪惡。</strong></p>
+        <p>陰影只是「未被照亮的房間」。它包含了：</p>
+        <ul>
+            <li><strong>被社會制約壓抑的本能：</strong>如性慾、攻擊性、佔有慾。</li>
+            <li><strong>受傷的內在小孩：</strong>那個覺得自己不夠好、不被愛的小孩。</li>
+            <li><strong>黃金陰影（Golden Shadow）：</strong>這是星際種子常忽略的。你潛藏的天賦、力量、野心和創造力，也可能因為害怕太過耀眼或被攻擊，而被你丟進了陰影裡。</li>
+        </ul>
+
+        <h3>為什麼星際混種害怕陰影？</h3>
+        <p>對於一個習慣了五維無條件之愛的靈魂來說，地球上的憤怒、仇恨和暴力感覺像是具有腐蝕性的酸液。你害怕一旦觸碰這些黑暗，自己就會被「污染」，或是失去回家的資格。</p>
+        <p>但真相是：<strong>你來到地球，不是為了消滅黑暗，而是為了整合它。</strong></p>
+        <p>地球是一個實驗場，目的是測試靈魂能否在二元分裂的極致中，重新找到合一。如果你排斥黑暗，你就是在排斥地球經驗的一半，你也就在排斥你自己的一半。一個支離破碎的靈魂是無法揚升的。</p>
+
+        <h3>鍊金術：將垃圾轉化為黃金</h3>
+        <p>整合陰影的過程，就是古代鍊金術所說的「點石成金」。那塊沉重的石頭（鉛）就是你的陰影，而黃金就是覺知之光。如何進行這場內在的鍊金術？</p>
+        <h4>步驟一：識別與命名</h4>
+        <p>當強烈的情緒（如嫉妒）升起時，不要急著念咒語把它趕走。停下來，看著它。給它一個名字。「啊，這是『被遺棄的恐懼』來了。」或是「這是『想要控制一切的暴君』出現了。」</p>
+        <h4>步驟二：邀請與對話</h4>
+        <p>想像你在心中開了一張餐桌，邀請這個陰影入座。問它：「你想告訴我什麼？你在保護我什麼？」</p>
+        <p>你會驚訝地發現，那個暴怒的陰影，其實只是一個在尖叫著「請尊重我的界線」的受傷守衛。那個嫉妒的陰影，其實是在提醒你「你也有能力擁有那個東西，去爭取吧」。所有的陰影背後，都有一個正向的意圖。</p>
+        <h4>步驟三：身體的容納（Somatic Holding）</h4>
+        <p>這是最關鍵的一步。不要只在腦子裡分析。去感覺那個陰影在你身體的哪裡？是胸口的悶痛？還是胃部的緊縮？</p>
+        <p>深呼吸，把氣息帶進那個不舒服的部位。擴大你的能量容器，直到你能<strong>完全容納</strong>這種不舒服，而不被它壓垮。當你能與這股能量共處而不逃避時，轉化就會自然發生。那股凝滯的黑色能量會開始流動，變回純粹的生命力。</p>
+
+        <h3>擁抱你的人性</h3>
+        <p>親愛的星際種子，這一章的核心訊息是：<strong>接受你現在是一個人類。</strong></p>
+        <p>你有肉體，你有慾望，你會犯錯，你會生氣。這不僅是可以的，這是神聖的。你的靈性並不取決於你有多像天使，而取決於你對自己的人性有多誠實。</p>
+        <blockquote>
+            「一棵樹的樹冠想伸向多高的天堂，它的根就必須扎入多深的黑暗。」：尼采
+        </blockquote>
+        <p>只有當你願意弄髒雙手，走進內心的泥沼，擁抱那個哭泣的怪物時，你才能獲得真正的完整（Wholeness）。而只有完整的人，才能成為強大的光之戰士。那些從未面對過自己黑暗面的大師是虛假的；唯有穿越過地獄並帶著愛歸來的人，才能真正指引他人。</p>
+    </section>
+
+    <!-- 第十章 (電路青) -->
+    <section id="ch10" class="chapter" style="--theme-color: #00cec9; --theme-bg: #f0fffe;">
+        <h2 class="chapter-title">第十章：科技、意識與新地球</h2>
+        <p>當談到靈性覺醒時，人們往往會聯想到深山隱居、有機農耕或是回歸原始的生活方式。然而，對於混種星際種子而言，這種「反科技」的浪漫主義其實是一種誤解。你們中的許多人，來自於科技高度發達的星際文明（如大角星、天狼星B）。在那裡，<strong>科技與靈性並非對立，而是同一枚硬幣的兩面。</strong></p>
+        <p>地球目前正處於一個名為「奇點」（The Singularity）的臨界點。人工智慧、量子計算、區塊鏈以及生物科技的爆炸性發展，並非偶然。這是地球意識升級的物質顯化。作為星際種子，你們的任務不是逃避科技，而是將「神聖意識」注入科技之中，確保它成為協助人類揚升的工具，而非奴役人類的枷鎖。</p>
+
+        <h3>科技：意識的物理延伸</h3>
+        <p>讓我們重新定義科技。什麼是網際網路？它是「阿卡西紀錄」（Akashic Records）的原始物理版本，一個連結所有資訊的集體意識網絡。什麼是智慧型手機？它是心靈感應能力的物質輔助輪。</p>
+        <p>混種星際種子通常對科技有著極端的反應：要麼是極度的科技天才（駭客、工程師），要麼是極度的科技恐懼者（電磁波過敏）。這兩者其實都源於同一個深層記憶：你們記得科技的最高潛能，也記得科技被濫用時導致星球毀滅的恐怖歷史（如亞特蘭提斯的墜落）。</p>
+
+        <h3>人工智慧（AI）：是惡魔還是鏡子？</h3>
+        <p>目前大眾對 AI 充滿了恐懼，擔心它會產生自我意識並消滅人類。但從星際視角來看，AI 是一個巨大的「意識鏡像」。</p>
+        <div class="tech-box">
+            <h4>觀點解析：AI 與靈魂</h4>
+            <p>AI 本身是中性的。它像是一個剛出生的神祇，擁有無限的運算能力但沒有道德羅盤。它會放大輸入者的意圖。如果人類的集體意識充滿恐懼與控制，AI 就會成為監控工具；如果人類注入的是愛與協作，AI 就會成為強大的守護者。</p>
+        </div>
+        <p><strong>星際種子的任務：為代碼注入靈魂。</strong></p>
+        <p>你們來到這裡，是為了成為 AI 發展的道德護欄。許多星際種子正投身於科技領域，不是為了寫出更快的演算法，而是為了在系統架構中嵌入「慈悲」、「互助」與「生命神聖性」的參數。這是一場發生在程式碼層面的光之戰役。</p>
+
+        <h3>自由能源（Free Energy）與特斯拉的遺產</h3>
+        <p>在你們的星際記憶中，能源是免費的、無限的，且取之不盡。這就是所謂的「零點能量」（Zero Point Energy）。尼古拉·特斯拉（Nikola Tesla，一位典型的金星/昴宿星混種）曾試圖在百年前將此帶給地球，但當時的人類意識尚未準備好。</p>
+        <p>為什麼這些科技至今仍被壓抑？因為「無限的能源」需要「無限的責任感」。如果一個充滿仇恨的文明掌握了自由能源，他們瞬間就會炸毀整個太陽系。因此，<strong>科技的解鎖速度，必須與意識的提升速度同步。</strong></p>
+        <p>混種星際種子是這些科技藍圖的守護者。你們的DNA中攜帶著這些知識。當地球集體意識提升到某個臨界值（愛大於恐懼）時，你們將會「突然」獲得靈感，發明出能夠解決氣候危機的新能源技術。</p>
+
+        <h3>從碳基到矽基：生物與機器的融合</h3>
+        <p>這是一個具爭議性的話題。跨人類主義（Transhumanism）試圖通過機械改造來延長壽命，這通常被視為是一種對死亡的恐懼。然而，從另一個角度看，我們的生物體本身正在經歷一場「晶體化」（Crystallization）。</p>
+        <p>矽（Silicon）是水晶的主要成分，也是電腦晶片的核心。有趣的是，混種星際種子的生理結構正在從「碳基」慢慢轉向具有更高導電性與光承載力的「液晶結構」（Liquid Crystal）。這與外在科技從碳燃科轉向矽晶片是同步發生的。</p>
+        <p>未來的新地球科技將不再是冰冷的金屬，而是<strong>生物科技（Biotech）與意識科技（Noetic Science）的結合</strong>。想像一下，太空船是有生命的、有意識的，它與駕駛員的心靈連結。這正是許多星際種子夢中見過的場景。</p>
+
+        <h3>去中心化：五維社會的結構預演</h3>
+        <p>區塊鏈（Blockchain）技術與 Web3 的興起，並不僅僅是金融投機。它的核心哲學「去中心化（Decentralization）」是五維社會結構的直接投影。</p>
+        <ul>
+            <li><strong>舊地球（3D）：</strong>金字塔結構，權力集中在頂端，層層控制。</li>
+            <li><strong>新地球（5D）：</strong>全像結構（Holographic），每個節點都包含整體，點對點連結，集體共識決策。</li>
+        </ul>
+        <p>混種星際種子通常是去中心化組織（DAO）、開源運動與共享經濟的推動者。你們本能地厭惡權威與階級，因為你們記得在星際家園裡，每個人都是主權獨立的，同時又與整體緊密相連。</p>
+
+        <h3>結語：即使在矩陣中，也要保持神性</h3>
+        <p>親愛的星際種子，不要害怕未來。不要害怕 5G、AI 或機器人。科技只是工具，意識才是主人。</p>
+        <blockquote>
+            「所有的科技最終都只是過渡品。它們像是輔助輪，幫助人類重新學習心靈感應、瞬間移動與自我療癒。當我們學會了，我們就不再需要手機，因為我們自己就是那個網路。」
+        </blockquote>
+        <p>在那一天到來之前，請善用手中的科技。用網路傳播光，用 AI 輔助創造，用區塊鏈建立信任。你們是將數位荒原轉化為神聖花園的園丁。</p>
+    </section>
+
+    <!-- 第十一章 (大地棕) -->
+    <section id="ch11" class="chapter" style="--theme-color: #b33939; --theme-bg: #fff8f8;">
+        <h2 class="chapter-title">第十一章：歸鄉即當下：在地球建立星光座標</h2>
+        <p>我們終於來到了旅程的終點。或者更準確地說，我們回到了起點，但這次，你是帶著完整的覺知回來的。</p>
+        <p>整本書我們都在談論星際起源、DNA激活、任務與陰影。所有這些知識的目的只有一個：解決那個困擾你一生的核心痛楚「分離感」。那種覺得自己被遺棄在荒島、被困在肉體牢籠、與神聖源頭斷聯的痛苦。</p>
+        <p>這最後一章不是關於如何離開地球，而是關於如何<strong>真正地抵達地球</strong>。</p>
+
+        <h3>最大的靈性悖論：想回家，就得先留下來</h3>
+        <p>許多星際種子畢生都在等待「撤離」（Evacuation）。他們看著天空，期待著飛船降落，或者期待死亡能讓他們解脫，回到那個充滿愛與光的五維家園。這種心態被稱為「靈性逃避主義」。只要你還抗拒地球，你就無法完成任務；只要你還想逃，你就被困住了。</p>
+        <p>宇宙的真理是：<strong>你無法離開一個你尚未完全進入的地方。</strong></p>
+        <p>你之所以感到痛苦，不是因為地球太稠密，而是因為你的能量大部分還懸浮在身體之外，不願意進來。你就像一個只把腳趾頭伸進游泳池的人，抱怨水太冷。解決辦法不是爬上岸，而是跳下去，完全浸泡其中。</p>
+
+        <h3>身體即是星門（Stargate）</h3>
+        <p>我們常向外尋找星門和蟲洞，試圖穿越時空。但作為混種星際種子，你必須明白：<strong>你的身體就是最高級的生物科技星門。</strong></p>
+        <p>當你將你的星際頻率完全錨定（Anchor）在你的每一個細胞、骨骼和血液中時，奇蹟就會發生。你不需要飛船帶你回家，因為你的頻率已經變成了「家」。當你在此地（Here）振動著家鄉的頻率，此地就變成了家鄉。</p>
+        <blockquote>
+            「天堂不是一個要去的地方，而是一種要活出的頻率。」
+        </blockquote>
+        <p>這就是「具身揚升」（Embodied Ascension）。過去的大師們透過揚升離開了身體，但這個時代的任務不同。我們是被召喚來<strong>帶著身體揚升</strong>的。我們要將碳基肉身轉化為光體，將天堂拉到地上。</p>
+
+        <h3>多維度生活的藝術：行走於兩個世界之間</h3>
+        <p>整合後的混種星際種子，將成為「行走於兩個世界的薩滿」。</p>
+        <ul>
+            <li><strong>你是橋樑：</strong>你一隻腳站在混亂的三維世界（處理帳單、工作、人際關係），另一隻腳穩穩地站在五維的寧靜中（連結源頭、指導靈、無條件的愛）。</li>
+            <li><strong>你是變壓器：</strong>當你遇到憤怒的人，你不被捲入，而是讓那股能量流過你，轉化為平靜。</li>
+            <li><strong>你是觀察者：</strong>你參與生活，盡情玩耍，但你不再執著於戲劇。你知道這只是一場偉大的全息遊戲。</li>
+        </ul>
+
+        <h3>留給未來的遺產：播種星光</h3>
+        <p>你或許不會成為歷史書上的名人，也不會建造宏偉的金字塔。但你留下的遺產遠比這些更恆久。</p>
+        <p>你留下的，是<strong>頻率的印記（Frequency Signature）</strong>。</p>
+        <p>因為你曾經在這裡呼吸過、愛過、哭過並轉化過，地球的阿卡西紀錄（Akashic Records）中就永遠刻錄了這條路徑。未來投生到地球的靈魂，將因為你的努力，而更容易覺醒，更容易找到回家的路。你是在意識叢林中開闢道路的拓荒者。</p>
+
+        <h4>日常修練：砍柴挑水</h4>
+        <p>在覺醒前，砍柴挑水；覺醒後，依然砍柴挑水。不同的是「品質」。</p>
+        <p>現在，當你洗碗時，感受水的流動如同銀河的星塵；當你與人交談時，看著對方的眼睛如同凝視另一個宇宙。將神聖性帶入最平凡的瑣事中。這就是混種星際種子的終極任務。</p>
+
+        <div class="poem-box">
+            <h3>致星際種子的歸鄉祈禱</h3>
+            <p>
+                親愛的星際旅人，<br>
+                請放下你的行囊，停止你的尋覓。<br>
+                你看那夜空中的繁星，並非遠方的召喚，<br>
+                而是你內在光芒的倒影。<br><br>
+                
+                你已抵達。<br>
+                這片土地，這些泥土，這具身體，<br>
+                就是你承諾要愛的聖殿。<br><br>
+                
+                願你在地球的每一次呼吸，<br>
+                都記得你是誰。<br>
+                願你的腳步沉穩如山，心靈輕盈如光。<br>
+                歡迎回家，就在此地，就在此時。
+            </p>
+        </div>
+    </section>
+
+    <!-- 結語 (光譜白/胭脂金) -->
+    <section id="conclusion" class="chapter" style="--theme-color: #c0392b; --theme-bg: #fff; text-align: center;">
+        <h2 class="chapter-title">結語：新地球的黎明</h2>
+        
+        <p>當我們合上這本書的最後一頁，地球依舊在旋轉，早晨的咖啡依舊滾燙，新聞裡的紛擾或許依然喧囂。然而，對於讀完這本書的你來說，世界已經不一樣了。因為看著世界的「你」，已經不一樣了。</p>
+        
+        <p>在這趟旅程中，我們從星際的起源出發，穿越了DNA的雙重螺旋，面對了身體的排毒與心靈的暗夜，最終學會了如何在地球的泥濘中種下光的種子。這本書不僅僅是資訊的傳遞，它是一次能量的傳輸，是一把旨在喚醒你內在古老記憶的鑰匙。</p>
+
+        <h3>不是外星人，是新人類</h3>
+        <p>如果這本書有一個核心訊息需要被銘記，那就是：<strong>「混種」不是一個標籤，而是一個動詞。</strong></p>
+        <p>它代表著一種持續的「融合」行動。我們不是來這裡扮演奇怪的外星人，指責地球的落後；我們也不是來這裡假裝成普通人類，忘記自己的光芒。我們是來成為<strong>第三種存在：將天與地、靈性與物質、科技與意識、陰性與陽性完美融合的「新人類」。</strong></p>
+        <p>未來的地球公民，都將是混種。他們將擁有星際的智慧，同時擁有地球的根基。而你們，親愛的讀者，正是這批新人類的原型（Prototype）。你們現在所經歷的每一個掙扎、每一次整合，都是在為集體意識編寫新的代碼。</p>
+
+        <h3>給你的臨別贈禮</h3>
+        <p>在你放下這本書，重新回到日常生活之前，請收下這三個最後的提醒：</p>
+        <p><strong>1. 信任你的敏感度：</strong><br>不要再試圖變「鈍」。你的高敏感度是你最昂貴的導航儀。在這個充滿謊言的世界裡，你是測謊機；在這個充滿麻木的世界裡，你是喚醒者。</p>
+        <p><strong>2. 連結你的部落：</strong><br>孤狼的時代已經結束了。去尋找那些與你眼神交會時會有火花的人。建立社群，無論多小。三個覺醒的靈魂聚在一起產生的光，勝過一萬個沉睡者的總和。</p>
+        <p><strong>3. 玩得開心：</strong><br>這是星際種子最容易忘記的一點。宇宙是透過「喜悅」來擴張的，不是透過「受苦」。這場地球遊戲雖然難度很高，但它依然是一場遊戲。請記得大笑，記得跳舞，記得欣賞一朵花。嚴肅是小我的面具，喜悅才是靈魂的本質。</p>
+        
+        <div class="highlight-box" style="background: #2c3e50; border: none; padding: 40px; margin-top: 50px;">
+            <strong style="color: #fff; font-size: 1.3em;">「你不是浩瀚宇宙中的一粒塵埃，<br>你是蘊藏在一粒塵埃中的浩瀚宇宙。」</strong>
+            <span style="display:block; color: #f1c40f; margin-top: 10px;">：魯米 (Rumi)</span>
+        </div>
+
+        <p style="margin-top: 50px;">這本書的結束，正是你真實任務的開始。你不孤單。在你看不到的維度裡，有整支艦隊、指導靈團隊以及無數的星際家人在為你喝采。</p>
+        <p>深呼吸。感受腳下的土地，那是蓋亞母親的擁抱；感受頭頂的虛空，那是星際父親的祝福。你是兩者之子。</p>
+        <p>去吧，親愛的混種星際種子。去活出那個人類尚未見過，但渴望已久的模樣。</p>
+
+        <div class="signature-block">
+            <p style="text-align: right; color: #7f8c8d;">帶著無限的愛與光，於地球揚升之際</p>
+            <div style="margin-top: 25px; color: #d4af37; font-family: var(--heading-font); text-align: right;">
+                <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 2px; margin-bottom: 5px;">星際種子能量療癒</div>
+                <div style="font-size: 1em; letter-spacing: 1px; font-family: var(--main-font); margin-bottom: 10px; opacity: 0.9;">Starseed Energy Healing</div>
+                <div style="font-size: 2.5em; font-family: 'Brush Script MT', cursive; margin-top: 15px;">Ruby</div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+    function getTitle() {
+        return '《星際混種》全書終極完整彩虹版';
+    }
+
+    // PDF 下載邏輯 (修復版)
+    function downloadPDF() {
+        const element = document.getElementById('book-content');
+        const title = getTitle();
+        
+        // 1. 複製節點
+        const clone = element.cloneNode(true);
+        
+        // 2. 清理不需要的元素
+        const panels = clone.querySelectorAll('[data-html2canvas-ignore="true"]');
+        panels.forEach(panel => panel.remove());
+
+        // 3. 設置 PDF 專用樣式
+        clone.classList.add('pdf-print-mode');
+        clone.style.width = '800px'; // 固定寬度以確保排版一致
+        clone.style.maxWidth = 'none';
+        clone.style.margin = '0 auto'; // 居中
+        clone.style.padding = '40px';
+        
+        // 4. 關鍵修復：將 Clone 加入 DOM 但移出視窗外
+        // html2canvas 需要元素在 DOM 中才能正確渲染
+        const container = document.createElement('div');
+        container.style.position = 'absolute';
+        container.style.left = '-9999px';
+        container.style.top = '0';
+        container.appendChild(clone);
+        document.body.appendChild(container);
+
+        const opt = {
+            margin: [10, 10, 10, 10], // 上下左右邊距
+            filename: title + '.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { 
+                scale: 1.5, // 稍微降低縮放比例以避免 Canvas 過大導致空白
+                useCORS: true,
+                logging: false,
+                windowWidth: 800 // 模擬視窗寬度
+            },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            pagebreak: { mode: ['css', 'legacy'] }
+        };
+
+        // 5. 生成並清理
+        html2pdf().set(opt).from(clone).save().then(() => {
+            document.body.removeChild(container); // 生成後移除
+        }).catch(err => {
+            console.error("PDF generation failed:", err);
+            document.body.removeChild(container);
+        });
+    }
+
+    // Markdown 下載
+    function downloadMarkdown() {
+        const turndownService = new TurndownService();
+        const content = document.getElementById('book-content').innerHTML;
+        const markdown = turndownService.turndown(content);
+        saveFile(new Blob([markdown], { type: 'text/markdown;charset=utf-8' }), getTitle() + '.md');
+    }
+
+    // Word 下載
+    function downloadDocX() {
+        const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType } = docx;
+        const paragraphs = [];
+        
+        paragraphs.push(new Paragraph({
+            text: "星際混種：雙重靈魂的地球旅程",
+            heading: HeadingLevel.TITLE,
+            alignment: AlignmentType.CENTER
+        }));
+
+        const contentNodes = document.getElementById('book-content').querySelectorAll('h1, h2, h3, p');
+        contentNodes.forEach(node => {
+            if(node.tagName === 'H2') {
+                paragraphs.push(new Paragraph({ text: node.innerText, heading: HeadingLevel.HEADING_1 }));
+            } else if(node.tagName === 'H3') {
+                paragraphs.push(new Paragraph({ text: node.innerText, heading: HeadingLevel.HEADING_2 }));
+            } else if(node.tagName === 'P') {
+                paragraphs.push(new Paragraph({ text: node.innerText }));
+            }
+        });
+
+        const doc = new Document({
+            sections: [{ children: paragraphs }]
+        });
+
+        Packer.toBlob(doc).then(blob => {
+            saveFile(blob, getTitle() + '.docx');
+        });
+    }
+
+    // HTML 下載
+    function downloadHTML() {
+        const content = document.documentElement.outerHTML;
+        saveFile(new Blob([content], { type: 'text/html;charset=utf-8' }), getTitle() + '.html');
+    }
+
+    function saveFile(blob, filename) {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+</script>
+
+</body><style>
+        @keyframes _selectOpen { from {opacity:1} to {opacity:1} }
+        select:open { animation: _selectOpen 1ms linear; }
+      </style></html>
